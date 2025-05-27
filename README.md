@@ -32,7 +32,7 @@ Now jump into **Tutorial 1** in [`tutorials.md`](tutorials.md).
 ---
 ## 🗺️ Course Map <a name="course-map"></a>
 ```mermaid
-graph LR
+flowchart TD
     A[Setup & Dataset] --> B[Image Formation]
     B --> C[GUI Navigation]
     C --> D[Real‑World Measurements]
