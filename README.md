@@ -40,6 +40,20 @@ Day1_Fiji_Basics/
 ```
 
 ---
+## 🧾 Day 1 – Sample Macros Overview
+
+| Macro File                   | What It Does                                                                 | Teaches                              |
+|-----------------------------|------------------------------------------------------------------------------|--------------------------------------|
+| `01_open_and_convert.ijm`   | Opens the M51 image, inspects info, converts to 8-bit with and without scaling | Bit depth, metadata, conversion      |
+| `02_brightness_contrast.ijm`| Opens `gel_inv`, adjusts contrast manually, applies LUT, saves output        | Non-destructive display vs “Apply”   |
+| `03_roi_measurement.ijm`    | Opens `blobs`, adds ROIs, sets measurements, measures area/perimeter         | ROI tools, results table             |
+| `04_set_scale_and_bar.ijm`  | Opens `Cell_Colony`, sets scale from line ROI, adds scale bar, flattens overlay | Calibration + overlays               |
+| `05_batch_open_and_save.ijm` *(bonus)* | Opens all `.tif` files in a folder, converts to 8-bit, saves copies     | Automation teaser                    |
+
+📦 **Download all macros as a ZIP file:**  
+👉 Right-click and “Save link as…”  
+[📥 Download Day1_Fiji_Basics_macros.zip](sandbox:/mnt/data/Day1_Fiji_Basics_macros.zip)
+
 
 ## 📜 Macro Descriptions
 
