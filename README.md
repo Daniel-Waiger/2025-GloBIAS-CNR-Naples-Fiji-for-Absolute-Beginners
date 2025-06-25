@@ -1,6 +1,5 @@
 # 🧬 Fiji for Beginners
 
-![hero](assets/hero_banner.png)
 
 <p align="center">
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-CC--BY--SA%204.0-brightgreen"></a>
