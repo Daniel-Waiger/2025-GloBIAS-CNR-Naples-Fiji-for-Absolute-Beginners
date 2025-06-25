@@ -29,7 +29,7 @@ This module introduces the Fiji (ImageJ) platform through hands-on activities wi
 ```markdown
 Day1_Fiji_Basics/
 │
-├── tutorial_macros/
+├── macros/
 │   ├── 01_open_and_convert.ijm
 │   ├── 02_brightness_contrast.ijm
 │   ├── 03_roi_measurement.ijm
@@ -41,6 +41,7 @@ Day1_Fiji_Basics/
 
 ---
 
+## 📜 Macro Descriptions
 
 ### `01_open_and_convert.ijm`  
 📌 Opens the M51 sample image, displays metadata, and converts it to 8-bit with and without scaling.
@@ -190,6 +191,7 @@ for (i=0; i<list.length; i++) {
 ```
 
 ---
+
 ## 🔧 Setup Instructions
 
 1. Open Fiji.
@@ -199,9 +201,13 @@ for (i=0; i<list.length; i++) {
 
 ---
 
-## 🧑‍🏫 Teaching Note
+## 🧠 Good to Know
 
-These macros align directly with the live demo sequence in the 13:00–14:00 session on Day 1. They are designed for beginner-level participants with minimal scripting experience.
+- Use `Image → Show Info` to inspect metadata.
+- Bit-depth conversions affect quantification — always check scaling.
+- Avoid using “Apply” on brightness/contrast unless you're saving for display.
+- Save ROIs and results tables for reproducibility.
 
-Enjoy exploring Fiji!
-```
+---
+
+## Enjoy exploring Fiji!
