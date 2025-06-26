@@ -1,0 +1,10 @@
+run("M51 Galaxy (177K)");
+run("Show Info...");
+run("Duplicate...", "title=M51_Copy");
+setOption("ScaleConversions", true);
+run("8-bit");
+saveAs("Tiff", "M51_scaled.tif");
+run("Revert");
+setOption("ScaleConversions", false);
+run("8-bit");
+saveAs("Tiff", "M51_unscaled.tif");
