@@ -37,10 +37,6 @@ This module introduces Fiji (ImageJ) through hands-on sample image exercises, su
 | `08_masking_regions.ijm`         | Creates and applies a binary mask to restrict analysis                    | Masking via image calculator             |
 | `09_ctcf_fluorescence.ijm`       | Measures fluorescence, calculates corrected total cell fluorescence (CTCF)| Integrated density, background correction|
 
-📦 **Download all macros as a ZIP file:**  
-👉 Right-click and “Save link as…”  
-[📥 Download Day1_Fiji_Basics_macros.zip](sandbox:/mnt/data/Day1_Fiji_Basics_macros.zip)
-
 ---
 
 ## 🔧 Setup Instructions
@@ -193,7 +189,7 @@ Use `Image → Type → 8-bit`. Ensure “Scale When Converting” is enabled (`
 ## 2. Bit-Depth and Scaling
 
 ### What does “Scale When Converting” do?
-When checked, it rescales your 16-bit image’s intensity range to 8-bit (0–255). When unchecked, intensities may be clipped or appear dark.
+When checked, it rescales a 16-bit (0-65535 )image’s intensity range to 8-bit (0–255), for example. When unchecked, intensities may be clipped (very bright) or appear dark.
 
 ### How to compare scaled vs unscaled conversion?
 Draw a line ROI using the line tool (`L`), then use `Analyze → Plot Profile` (`K`). Convert with and without scaling, then re-plot using the saved ROI for comparison.
