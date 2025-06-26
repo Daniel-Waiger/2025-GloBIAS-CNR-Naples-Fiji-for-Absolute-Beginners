@@ -37,10 +37,6 @@ This module introduces Fiji (ImageJ) through hands-on sample image exercises, su
 | `08_masking_regions.ijm`         | Creates and applies a binary mask to restrict analysis                    | Masking via image calculator             |
 | `09_ctcf_fluorescence.ijm`       | Measures fluorescence, calculates corrected total cell fluorescence (CTCF)| Integrated density, background correction|
 
-📦 **Download all macros as a ZIP file:**  
-👉 Right-click and “Save link as…”  
-[📥 Download Day1_Fiji_Basics_macros.zip](sandbox:/mnt/data/Day1_Fiji_Basics_macros.zip)
-
 ---
 
 ## 🔧 Setup Instructions
