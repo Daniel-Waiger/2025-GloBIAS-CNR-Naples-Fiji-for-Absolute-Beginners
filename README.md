@@ -1,10 +1,8 @@
 # 🧬 Fiji for Beginners
 
-
 <p align="center">
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-CC--BY--SA%204.0-brightgreen"></a>
 </p>
-
 
 # Day 1 – Fiji Basics & Introduction  
 **Fluorescence Image Analysis Course – GloBIAS & CNR Naples 2025**  
@@ -13,216 +11,60 @@ Trainer: Daniel Waiger
 ---
 
 ## 📅 Overview  
-This module introduces the Fiji (ImageJ) platform through hands-on activities with built-in sample images. It includes guided practice, reproducible macros, and example workflows covering:
+This module introduces Fiji (ImageJ) through hands-on sample image exercises, supported by beginner-friendly macros and structured learning goals:
 
-- Image inspection and bit-depth conversion  
-- Contrast and LUT handling  
-- ROI drawing and measurements  
-- Calibration and scale bars  
-- Saving results and overlays  
-- BONUS: Basic macro automation
-
----
-
-## 📁 Folder Structure
-
-```markdown
-Day1_Fiji_Basics/
-│
-├── macros/
-│   ├── 01_open_and_convert.ijm
-│   ├── 02_brightness_contrast.ijm
-│   ├── 03_roi_measurement.ijm
-│   ├── 04_set_scale_and_bar.ijm
-│   └── 05_batch_open_and_save.ijm
-│
-└── README.md ← you are here
-```
+- Image loading and bit-depth conversion  
+- Intensity histograms and scaling effects  
+- Contrast adjustment and LUTs  
+- ROI tools and intensity measurements  
+- Spatial calibration and scale bars  
+- Automatic segmentation and particle analysis  
+- BONUS: Region masking and batch processing
 
 ---
-## 🧾 Day 1 – Sample Macros Overview
 
-| Macro File                   | What It Does                                                                 | Teaches                              |
-|-----------------------------|------------------------------------------------------------------------------|--------------------------------------|
-| `01_open_and_convert.ijm`   | Opens the M51 image, inspects info, converts to 8-bit with and without scaling | Bit depth, metadata, conversion      |
-| `02_brightness_contrast.ijm`| Opens `gel_inv`, adjusts contrast manually, applies LUT, saves output        | Non-destructive display vs “Apply”   |
-| `03_roi_measurement.ijm`    | Opens `blobs`, adds ROIs, sets measurements, measures area/perimeter         | ROI tools, results table             |
-| `04_set_scale_and_bar.ijm`  | Opens `Cell_Colony`, sets scale from line ROI, adds scale bar, flattens overlay | Calibration + overlays               |
-| `05_batch_open_and_save.ijm` *(bonus)* | Opens all `.tif` files in a folder, converts to 8-bit, saves copies     | Automation teaser                    |
+## 🧾 Day 1 – Sample Macros Overview (for quick review of the tasks)
+
+| Macro File                       | What It Does                                                               | Teaches                                  |
+|----------------------------------|----------------------------------------------------------------------------|------------------------------------------|
+| `01_image_info_conversion.ijm`   | Loads `M51`, shows metadata, converts to 8-bit with/without scaling       | Bit-depth, profiles, scaling             |
+| `02_histogram_profiles.ijm`      | Draws a line ROI, shows intensity profiles pre/post scaling               | Line ROI, Plot Profile, scaling effects  |
+| `03_brightness_contrast.ijm`     | Loads `gel_inv`, adjusts contrast, applies LUT                            | Display vs destructive changes           |
+| `04_channels_LUTs.ijm`           | Opens RGB image, splits/merges channels, applies LUTs                     | Multichannel handling, color tools       |
+| `05_roi_measurement.ijm`         | Opens `blobs`, draws ROIs, measures area/perimeter                        | ROI tools, Point tool, measurements      |
+| `06_set_scale_bar.ijm`           | Sets spatial scale using a known bar, adds and flattens scale bar         | Calibration + overlays                   |
+| `07_segmentation_particles.ijm`  | Segments objects using threshold/watershed, analyzes particles            | Segmentation, object counting            |
+| `08_masking_regions.ijm`         | Creates and applies a binary mask to restrict analysis                    | Masking via image calculator             |
+| `09_ctcf_fluorescence.ijm`       | Measures fluorescence, calculates corrected total cell fluorescence (CTCF)| Integrated density, background correction|
 
 📦 **Download all macros as a ZIP file:**  
 👉 Right-click and “Save link as…”  
 [📥 Download Day1_Fiji_Basics_macros.zip](sandbox:/mnt/data/Day1_Fiji_Basics_macros.zip)
-
-
-## 📜 Macro Descriptions
-
-### `01_open_and_convert.ijm`  
-📌 Opens the M51 sample image, displays metadata, and converts it to 8-bit with and without scaling.
-
-**Fiji Sample Image:**  
-`File → Open Samples → M51`
-
-```javascript
-// Open the sample image
-open("samples:ImageJ/M51.tif");
-
-// Show metadata about the image
-run("Show Info...");
-
-// Duplicate the image for safe editing
-run("Duplicate...", "title=M51_Copy");
-
-// Enable automatic scaling when converting to 8-bit
-setOption("ScaleConversions", true);
-run("8-bit");
-saveAs("Tiff", "/your/path/M51_scaled.tif");
-
-// Revert to original image
-run("Revert");
-
-// Disable scaling and convert again
-setOption("ScaleConversions", false);
-run("8-bit");
-saveAs("Tiff", "/your/path/M51_unscaled.tif");
-```
-
----
-
-### `02_brightness_contrast.ijm`  
-📌 Loads `gel_inv.tif`, adjusts brightness/contrast manually and applies the LUT.
-
-**Fiji Sample Image:**  
-`File → Open Samples → gel_inv`
-
-```javascript
-// Open the image
-open("samples:ImageJ/gel_inv.tif");
-
-// Auto-enhance contrast (non-destructive)
-run("Enhance Contrast", "saturated=0.35");
-
-// Set manual min/max brightness (destructive when Apply is used)
-setMinAndMax(80, 200);
-
-// Apply contrast change permanently
-run("Apply LUT");
-
-// Save result
-saveAs("Tiff", "/your/path/gel_inv_adjusted.tif");
-```
-
----
-
-### `03_roi_measurement.ijm`  
-📌 Uses the `blobs` image to add ROIs, set measurements, and extract area/perimeter data.
-
-**Fiji Sample Image:**  
-`File → Open Samples → blobs`
-
-```javascript
-// Open image with synthetic blobs
-open("samples:ImageJ/blobs.tif");
-
-// Draw rectangle ROI and add to manager
-makeRectangle(30, 40, 40, 40);
-roiManager("Add");
-
-// Draw oval ROI and add to manager
-makeOval(100, 100, 35, 35);
-roiManager("Add");
-
-// Set what to measure
-run("Set Measurements...", "area mean perimeter redirect=None decimal=3");
-
-// Measure all ROIs
-roiManager("Measure");
-
-// Save results as CSV
-saveAs("Results", "/your/path/blobs_results.csv");
-```
-
----
-
-### `04_set_scale_and_bar.ijm`  
-📌 Sets a spatial scale using the scale bar in `Cell_Colony.tif`, adds a visible scale bar overlay, and flattens it.
-
-**Fiji Sample Image:**  
-`File → Open Samples → Cell_Colony`
-
-```javascript
-// Open cell colony image with embedded scale bar
-open("samples:ImageJ/Cell_Colony.tif");
-
-// Draw a line over the visible scale bar (100 μm)
-makeLine(25, 230, 125, 230);
-
-// Set the scale for all measurements
-run("Set Scale...", "distance=100 known=100 unit=um");
-
-// Add a visible scale bar overlay
-run("Add Scale Bar", "width=100 height=12 font=18 color=White location=[Lower Right] bold overlay");
-
-// Flatten the image (burn the overlay into the pixels)
-run("Flatten");
-
-// Save the output
-saveAs("Tiff", "/your/path/Cell_Colony_scaled.tif");
-```
-
----
-
-### `05_batch_open_and_save.ijm`  
-📌 BONUS: Opens all `.tif` images in a folder, converts them to 8-bit, and saves new versions.  
-Great teaser for Day 2 automation.
-
-```javascript
-// Ask user to select a folder
-input = getDirectory("Choose a Folder");
-
-// Get all files in the folder
-list = getFileList(input);
-
-// Loop through each file
-for (i=0; i<list.length; i++) {
-
-   // Check if it's a .tif file
-   if (endsWith(list[i], ".tif")) {
-
-       // Open image
-       open(input + list[i]);
-
-       // Convert to 8-bit
-       run("8-bit");
-
-       // Save with new name
-       saveAs("Tiff", input + "converted_" + list[i]);
-
-       // Close current image
-       close();
-   }
-}
-```
 
 ---
 
 ## 🔧 Setup Instructions
 
 1. Open Fiji.
-2. Drag `.ijm` files into the main window or use `Plugins → Macros → Run`.
-3. Modify file paths in save lines if needed.
-4. Use built-in sample images to follow along.
+2. Drag `.ijm` macro files into Fiji, or use `Plugins → Macros → Run`.
+3. Make sure to adjust save paths in the macros before running.
+4. Use built-in sample images: `File → Open Samples`.
 
 ---
 
 ## 🧠 Good to Know
 
-- Use `Image → Show Info` to inspect metadata.
-- Bit-depth conversions affect quantification — always check scaling.
-- Avoid using “Apply” on brightness/contrast unless you're saving for display.
-- Save ROIs and results tables for reproducibility.
+- Use `Ctrl+I` (`Image → Show Info`) to inspect metadata and format.
+- Use `Ctrl+H` (`Analyze → Histogram`) to understand pixel distributions.
+- Toggle scaling via `Edit → Options → Conversion` before converting to 8-bit.
+- Press `T` to add any selection to the ROI Manager.
+- Use `Ctrl+M` to measure selections, `Ctrl+Shift+T` to threshold, `Shift+Ctrl+A` to analyze particles.
+- Save results from the Results window (`Ctrl+S`), or use macros for automation.
+- Avoid using “Apply” in contrast unless you're finalizing the image for export.
+- Use the ROI Manager and consistent naming (e.g., nuc1, nuc2) to organize your data.
 
 ---
+
 
 
 # FIJI Training – Questions & Answers (Beginner Friendly, with Shortcuts)
