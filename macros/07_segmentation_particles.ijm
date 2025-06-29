@@ -1,6 +1,9 @@
 run("Fluorescent Cells (400K)");
+
+// Create duplicate for working on copy
+run("Duplicate...", "title=Fluorescent_Cells_Copy");
 run("Split Channels");
-selectWindow("RGB_Cell (green)");
+selectWindow("Fluorescent_Cells_Copy (green)");
 run("8-bit");
 setAutoThreshold("Otsu");
 run("Convert to Mask");

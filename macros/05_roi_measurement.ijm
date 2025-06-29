@@ -1,4 +1,7 @@
 run("Blobs (25K)");
+
+// Create duplicate for working on copy
+run("Duplicate...", "title=Blobs_Copy");
 makeRectangle(30, 40, 40, 40);
 roiManager("Add");
 makeOval(100, 100, 35, 35);
