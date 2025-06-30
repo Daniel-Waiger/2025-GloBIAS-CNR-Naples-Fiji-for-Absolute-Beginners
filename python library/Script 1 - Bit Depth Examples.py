@@ -3,9 +3,9 @@ import numpy as np
 from PIL import Image
 from datetime import datetime
 import matplotlib.pyplot as plt
+from tkinter import filedialog, Tk
 
 # ======== USER CONFIGURATION ========
-INPUT_FILE = r"C:\Users\dwaig\Downloads\t1-head-s-60.tif"  # ← Replace with your file path
 BIT_DEPTHS = [1, 2, 4, 8, 16]
 FIGSIZE_PER_IMAGE = (4, 4)
 PAD_TOP = 0.9
@@ -20,8 +20,30 @@ def simulate_bit_depth(img, bits):
     quantized = np.round(scaled * max_val).astype(np.uint16)
     return (quantized / max_val * 255).astype(np.uint8)
 
+# Create a root window and hide it
+root = Tk()
+root.withdraw()
+
+# Open file dialog to select image
+print("Please select an image file...")
+input_file = filedialog.askopenfilename(
+    title="Select an image file",
+    filetypes=[
+        ("Image files", "*.tif *.tiff *.png *.jpg *.jpeg *.bmp"),
+        ("TIFF files", "*.tif *.tiff"),
+        ("All files", "*.*")
+    ]
+)
+
+# Check if user cancelled
+if not input_file:
+    print("No file selected. Exiting...")
+    exit()
+
+print(f"Selected file: {input_file}")
+
 # Load image
-image = Image.open(INPUT_FILE).convert("I")
+image = Image.open(input_file).convert("I")
 image_np = np.array(image)
 
 # Simulate all bit depths
@@ -37,6 +59,6 @@ fig.tight_layout(rect=[PAD_LEFT, PAD_BOTTOM, PAD_RIGHT, PAD_TOP])
 
 # Save
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-output_path = os.path.join(os.path.dirname(INPUT_FILE), f"bit_depth_panel_{timestamp}.png")
+output_path = os.path.join(os.path.dirname(input_file), f"bit_depth_panel_{timestamp}.png")
 fig.savefig(output_path, dpi=300)
 print(f"Saved to: {output_path}")
