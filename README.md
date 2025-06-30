@@ -4,14 +4,36 @@
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-CC--BY--SA%204.0-brightgreen"></a>
 </p>
 
-# Day 1 – Fiji Basics & Introduction  
-**Fluorescence Image Analysis Course – GloBIAS & CNR Naples 2025**  
-Trainer: Daniel Waiger
+**Trainer**: Daniel Waiger  
+**Event**: GloBIAS & CNR Naples 2025  
+**Dates**: July 7-8, 2025
+
+## 🔗 Quick Navigation
+- [📅 Course Schedule](#-course-schedule)
+- [🎯 Learning Objectives](#-learning-objectives) 
+- [📁 Day 1 Materials](Day1_Monday_July_7/) - Introduction, Plugins, ilastik
+- [📁 Day 2 Materials](Day2_Tuesday_July_8/) - AI Macros, Practical Session, Projects
+- [📚 Resources](Resources/) - Sample Images, Manuals, Python Scripts, Advanced Workflows
+- [🔧 Setup Instructions](#-setup-instructions)
+- [💡 Tips & Shortcuts](#-good-to-know)
+- [❓ Q&A Section](#questions--answers---hands-on)
+
+## 📅 Course Schedule
+
+### Day 1 – Monday, 7th July 2025
+- **13:00–14:00**: Introduction to FIJI 📊 [Slides](Day1_Monday_July_7/01_Introduction_to_FIJI/Introduction%20to%20image%20analysis.pptx)
+- **14:00–15:00**: Showcase of FIJI plugins for bioimage analysis (with Ana Stojilkovic)
+- **15:30–16:30**: ilastik for interactive segmentation 📊 [Materials](Day1_Monday_July_7/03_Ilastik_Interactive_Segmentation/)
+
+### Day 2 – Tuesday, 8th July 2025
+- **09:30–10:30**: Automatisation of bioimage analysis with ImageJ macro powered by large language models 📊 [Slides](Day2_Tuesday_July_8/01_AI_Macro_Automation/2020418_ImageJMacro.pdf)
+- **11:00–12:00**: ImageJ macro practical session (with Ana Stojiljkovic) 📄 [Macros](Day2_Tuesday_July_8/02_Macro_Practical_Session/)
+- **15:30–17:00**: Project working groups (with Sebastian Gonzalez Tirado)
 
 ---
 
-## 📅 Overview  
-This module introduces Fiji (ImageJ) through hands-on sample image exercises, supported by beginner-friendly macros and structured learning goals:
+## 🎯 Learning Objectives  
+This course introduces Fiji (ImageJ) through hands-on sample image exercises, supported by beginner-friendly macros and structured learning goals:
 
 - Image loading and bit-depth conversion  
 - Intensity histograms and scaling effects  
@@ -23,19 +45,19 @@ This module introduces Fiji (ImageJ) through hands-on sample image exercises, su
 
 ---
 
-## 🧾 Day 1 – Sample Macros Overview (for quick review of the tasks)
+## 🧾 ImageJ Macro Scripts Overview
 
-| Macro File                       | What It Does                                                               | Teaches                                  |
-|----------------------------------|----------------------------------------------------------------------------|------------------------------------------|
-| `01_image_info_conversion.ijm`   | Loads `M51`, shows metadata, converts to 8-bit with/without scaling       | Bit-depth, profiles, scaling             |
-| `02_histogram_profiles.ijm`      | Draws a line ROI, shows intensity profiles pre/post scaling               | Line ROI, Plot Profile, scaling effects  |
-| `03_brightness_contrast.ijm`     | Loads `gel_inv`, adjusts contrast, applies LUT                            | Display vs destructive changes           |
-| `04_channels_LUTs.ijm`           | Opens RGB image, splits/merges channels, applies LUTs                     | Multichannel handling, color tools       |
-| `05_roi_measurement.ijm`         | Opens `blobs`, draws ROIs, measures area/perimeter                        | ROI tools, Point tool, measurements      |
-| `06_set_scale_bar.ijm`           | Sets spatial scale using a known bar, adds and flattens scale bar         | Calibration + overlays                   |
-| `07_segmentation_particles.ijm`  | Segments objects using threshold/watershed, analyzes particles            | Segmentation, object counting            |
-| `08_masking_regions.ijm`         | Creates and applies a binary mask to restrict analysis                    | Masking via image calculator             |
-| `09_ctcf_fluorescence.ijm`       | Measures fluorescence, calculates corrected total cell fluorescence (CTCF)| Integrated density, background correction|
+| Macro File | What It Does | Teaches | Link |
+|------------|-------------|---------|------|
+| `01_image_info_conversion.ijm` | Loads `M51`, shows metadata, converts to 8-bit with/without scaling | Bit-depth, profiles, scaling | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/01_image_info_conversion.ijm) |
+| `02_histogram_profiles.ijm` | Draws a line ROI, shows intensity profiles pre/post scaling | Line ROI, Plot Profile, scaling effects | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/02_histogram_profiles.ijm) |
+| `03_brightness_contrast.ijm` | Loads `gel_inv`, adjusts contrast, applies LUT | Display vs destructive changes | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/03_brightness_contrast.ijm) |
+| `04_channels_LUTs.ijm` | Opens RGB image, splits/merges channels, applies LUTs | Multichannel handling, color tools | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/04_channels_LUTs.ijm) |
+| `05_roi_measurement.ijm` | Opens `blobs`, draws ROIs, measures area/perimeter | ROI tools, Point tool, measurements | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/05_roi_measurement.ijm) |
+| `06_set_scale_bar.ijm` | Sets spatial scale using a known bar, adds and flattens scale bar | Calibration + overlays | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/06_set_scale_bar.ijm) |
+| `07_segmentation_particles.ijm` | Segments objects using threshold/watershed, analyzes particles | Segmentation, object counting | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/07_segmentation_particles.ijm) |
+| `08_masking_regions.ijm` | Creates and applies a binary mask to restrict analysis | Masking via image calculator | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/08_masking_regions.ijm) |
+| `09_ctcf_fluorescence.ijm` | Measures fluorescence, calculates corrected total cell fluorescence (CTCF) | Integrated density, background correction | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/09_ctcf_fluorescence.ijm) |
 
 ---
 
@@ -292,4 +314,21 @@ See: [Martin Fitzpatrick’s Guide](https://blog.martinfitzpatrick.com/measuring
 
 ### Why normalize CTCF?
 Brighter signals may result from larger or more compact cells. CTCF normalization removes size and background biases, giving a more reliable comparison.
+
+---
+
+## 📚 Workshop Materials & Resources
+
+### � Course Structure
+- **[Day 1 Materials](Day1_Monday_July_7/)** - Introduction, Plugin Showcase, ilastik
+- **[Day 2 Materials](Day2_Tuesday_July_8/)** - AI Automation, Practical Session, Projects
+- **[Resources](Resources/)** - Sample Images, Manuals, Python Scripts, Advanced Workflows
+
+### 📊 Direct Links to Key Materials
+- [Introduction Slides](Day1_Monday_July_7/01_Introduction_to_FIJI/Introduction%20to%20image%20analysis.pptx) - Day 1 Opening
+- [AI Macro Programming](Day2_Tuesday_July_8/01_AI_Macro_Automation/2020418_ImageJMacro.pdf) - Day 2 Morning
+- [ChatGPT Enhancement Materials](Day2_Tuesday_July_8/01_AI_Macro_Automation/chatGPT_Materials/) - AI Integration
+- [Sample Images](Resources/Sample_Images/) - Practice datasets
+- [Training Manuals](Resources/Training_Manuals/) - Reference documentation
+- [Advanced Workflows](Resources/Advanced_Workflows/) - Complex analysis examples
 
