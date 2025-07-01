@@ -15,22 +15,20 @@
 - [🎯 Learning Objectives](#-learning-objectives) 
 - [📁 Day 1 Materials](Day1_Monday_July_7/) - Introduction, Plugins, ilastik
 - [📁 Day 2 Materials](Day2_Tuesday_July_8/) - AI Macros, Practical Session, Projects
-- [📚 Resources](Resources/) - Sample Images, Manuals, Python Scripts, Advanced Workflows
+- [📚 Resources](Resources/) - Sample Images, Manuals, ImageJ Macro / Python Scripts, Advanced Workflows
 - [🔧 Setup Instructions](#-setup-instructions)
 - [💡 Tips & Shortcuts](#-good-to-know)
 - [❓ Q&A Section](#questions--answers---hands-on)
 
 <p align="center">
   <a href="https://imagej.net/software/fiji/">
-    <img src="assets/logos/fiji-logo.png" alt="Fiji" height="50">
+    <img src="assets/logos/fiji-logo.png" alt="Fiji" height="100">
   </a>
-  &nbsp;&nbsp;
   <a href="https://www.ilastik.org/">
-    <img src="assets/logos/ilastik-logo.png" alt="ilastik" height="50">
+    <img src="assets/logos/ilastik-logo.png" alt="ilastik" height="100">
   </a>
-  &nbsp;&nbsp;
   <a href="https://chat.openai.com/">
-    <img src="assets/logos/chatgpt-logo.webp" alt="ChatGPT" height="50">
+    <img src="assets/logos/chatgpt-logo.webp" alt="ChatGPT" height="100">
   </a>
 </p>
 
