@@ -3,8 +3,8 @@ title: "Fiji for Beginners - GloBIAS & CNR Naples 2025"
 description: "Fluorescence Image Analysis Workshop Materials"
 author: "Daniel Waiger, Rocco D'Antuono, Ana Stojilijkovic, Sebastian Gonzalez Tirado"
 
-# Theme
-remote_theme: pages-themes/cayman@v0.2.0
+# Theme - Using custom CSS instead
+# remote_theme: pages-themes/cayman@v0.2.0
 # Alternative: theme: minima
 
 # GitHub Pages settings
@@ -33,10 +33,16 @@ collections:
 
 # Navigation (optional)
 header_pages:
-  - README.md
+  - index.md
   - Day1_Monday_July_7/README.md
   - Day2_Tuesday_July_8/README.md
   - Resources/README.md
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE
+  - github_pages_styling/
 
 # SEO and social
 twitter:

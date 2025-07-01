@@ -1,133 +1,294 @@
----
----
-
-@import "{{ site.theme }}";
-
-/* Custom Navigation Bar */
-.main-nav {
-  background: linear-gradient(120deg, #159957, #155799);
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.nav-container {
-  max-width: 64rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.nav-link {
-  color: rgba(255, 255, 255, 0.9);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.3rem;
-  transition: all 0.3s ease;
-  font-weight: 500;
-}
-
-.nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-  text-decoration: none;
-}
-
-.nav-link.active {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: white;
-}
-
-/* Responsive Navigation */
-@media screen and (max-width: 42em) {
-  .nav-container {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .nav-link {
-    text-align: center;
-  }
-}
-
-/* Custom styling for content */
-.main-content {
-  max-width: 64rem;
-  padding: 2rem 6rem;
-  margin: 0 auto;
-  font-size: 1.1rem;
-}
-
-/* Responsive content */
-@media screen and (max-width: 42em) {
-  .main-content {
-    padding: 2rem 1rem;
+/* Base & Reset */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    background: var(--background-color);
+    color: var(--text-color);
     font-size: 1rem;
-  }
+    line-height: 1.6;
 }
 
-/* Style for logo images */
-.main-content img[alt="Fiji"], 
-.main-content img[alt="ilastik"], 
-.main-content img[alt="ChatGPT"] {
-  max-height: 80px;
-  margin: 0 1rem;
+/* Theme Variables - Dark Mode (Default) */
+:root {
+    --background-color: #2c2c3e;
+    --text-color: #e0e0e0;
+    --navbar-bg: #1e1e2f;
+    --navbar-text: #90f0c0;
+    --navbar-link: #90f0c0;
+    --navbar-active-bg: #3c3c4e;
+    --navbar-active-text: #ffffff;
+    --navbar-hover-bg: #444465;
+    --navbar-hover-text: #ffffff;
+    --button-bg: #3a3a57;
+    --button-text: #90f0c0;
+    --button-hover-bg: #5a5a7e;
+    --footer-bg: #1e1e2f;
+    --footer-text: #90f0c0;
+    --section-border-color: #3a3a57;
+    --link-color: #90f0c0;
+    --icon-size-desktop: 1.2rem;
+    --icon-size-mobile: min(4vw, 2rem);
+    --nav-item-height: 3.5rem;
 }
 
-/* Better spacing for lists */
-.main-content ul, 
-.main-content ol {
-  margin-bottom: 1rem;
+/* Light Mode Theme Variables */
+[data-theme="light"] {
+    --background-color: #f0f8ff;
+    --text-color: #333;
+    --navbar-bg: #e6e0d4;
+    --navbar-text: #005f73;
+    --navbar-link: #005f73;
+    --navbar-active-bg: #d6c0a0;
+    --navbar-active-text: #3b261b;
+    --navbar-hover-bg: #ebdfd1;
+    --navbar-hover-text: #3b261b;
+    --button-bg: #d9c3b1;
+    --button-text: #3b261b;
+    --button-hover-bg: #c4a995;
+    --footer-bg: #e6e0d4;
+    --footer-text: #005f73;
+    --section-border-color: #ddd;
+    --link-color: #005f73;
 }
 
-.main-content li {
-  margin-bottom: 0.5rem;
+/* Navbar */
+.navbar {
+    background: var(--navbar-bg);
+    color: var(--navbar-text);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    overflow-y: auto;
+    width: min(20vw, 300px);
+    transition: all 0.3s ease;
+    position: fixed;
+    height: 100vh;
+    padding: 0.5rem;
+    gap: clamp(0px, 1vh, 4px);
+    margin: 0;
+    border: none;
 }
 
-/* Style for code blocks */
-.main-content pre {
-  background-color: #f3f6fa;
-  border: 1px solid #d0d7de;
-  border-radius: 6px;
-  padding: 16px;
-  overflow: auto;
+.navbar.collapsed {
+    width: min(8vw, 80px);
 }
 
-.main-content code {
-  background-color: #f3f6fa;
-  border-radius: 3px;
-  padding: 2px 4px;
-  font-size: 85%;
+.navbar.collapsed a {
+    padding: 8px;
+    justify-content: center;
 }
 
-/* Highlight boxes for important information */
-.highlight-box {
-  background-color: #f8f9fa;
-  border-left: 4px solid #159957;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 0 6px 6px 0;
+.navbar.collapsed a .icon {
+    margin-right: 0;
 }
 
-/* Custom button styles */
-.btn-custom {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  padding: 0.75rem 1rem;
-  text-decoration: none;
+.navbar.collapsed a i {
+    padding: 4px;
 }
 
-.btn-custom:hover {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3);
+.navbar a, 
+.navbar button {
+    min-height: var(--nav-item-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+}
+
+.navbar a {
+    color: var(--navbar-link);
+    text-decoration: none;
+    margin: 0;
+    padding: 0 16px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: clamp(24px, 4vh, 32px);
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+    font-size: clamp(14px, 1vw, 16px);
+}
+
+.navbar a .icon {
+    margin-right: min(1vw, 12px);
+    font-size: clamp(16px, 1.2vw, 20px);
+}
+
+.navbar a i,
+.navbar button i {
+    font-size: var(--icon-size-desktop);
+    transition: all 0.3s ease;
+}
+
+.navbar a i {
+    padding: clamp(0px, 0.5vh, 4px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar.collapsed a .text {
+    display: none;
+}
+
+.navbar a.active {
+    background: var(--navbar-active-bg);
+    color: var(--navbar-active-text);
+}
+
+.navbar a:hover {
+    background: var(--navbar-hover-bg);
+    color: var(--navbar-hover-text);
+}
+
+/* Layout */
+main {
+    margin-left: min(20vw, 300px);
+    padding: 40px 20px 20px 40px;
+    flex: 1;
+    transition: margin-left 0.3s ease;
+}
+
+.navbar.collapsed + main {
+    margin-left: min(8vw, 80px);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 1rem;
+}
+
+.theme-toggle:hover {
+    background: var(--button-hover-bg);
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--section-border-color);
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons & Links */
+.btn, .button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--button-bg);
+    color: var(--button-text);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover, .button:hover {
+    background: var(--button-hover-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Logo styling */
+.logo-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.logo-container img {
+    max-height: 80px;
+    margin: 0 1rem;
+}
+
+/* Code blocks */
+pre {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+code {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* Media Query for Portrait/Mobile */
+@media (max-width: 768px), (orientation: portrait) {
+    .navbar {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0.3rem;
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+        padding: 8px;
+        margin: 0;
+    }
+
+    .navbar.collapsed {
+        width: 100%;
+    }
+
+    main {
+        margin-left: 0;
+        margin-top: 60px;
+        padding: 20px;
+    }
+
+    #collapse-toggle {
+        display: none;
+    }
+}
+
+/* Very Small Screens */
+@media (max-width: 480px) {
+    .navbar a {
+        padding: 0.3rem;
+        margin: 0;
+    }
+
+    .navbar .icon {
+        font-size: 1.2rem;
+    }
+
+    main {
+        margin-top: 2.5rem;
+        padding: 15px;
+    }
 }
