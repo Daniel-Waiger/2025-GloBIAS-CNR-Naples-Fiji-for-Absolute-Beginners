@@ -101,7 +101,7 @@ Install these tools before the workshop begins:
 #### 🧠 **Day 2 - Morning: AI Macro Automation**
 - **ChatGPT Account**: Sign up at [chat.openai.com](https://chat.openai.com/)
   - Free account sufficient for workshop
-- **Text Editor**: VS Code, Notepad++, or similar for macro editing
+- **Text Editor**: VS Code for macro editing
 
 #### 📊 **Day 2 - Afternoon: Macro Practical Session**
 - **Workshop Materials**: Clone/download this repository
@@ -110,11 +110,6 @@ Install these tools before the workshop begins:
 - **Fiji Setup**: 
   - Drag `.ijm` files into Fiji to run
   - Use `File → Open Samples` for built-in test images
-
-#### 🐍 **Optional: Python Scripts** (Advanced Users)
-- **Python 3.8+**: Download from [python.org](https://www.python.org/)
-- **Required packages**: `pip install numpy matplotlib opencv-python scikit-image`
-  - Scripts located in `Resources/Python_Scripts/`
 
 ### Quick Test Setup
 1. **Fiji**: Open sample image with `File → Open Samples → Blobs`
