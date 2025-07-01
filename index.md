@@ -31,7 +31,7 @@ This intensive 5-day workshop introduces bioimage analysis fundamentals using Fi
 
 <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin: 2rem 0;">
   <a href="{{ '/Day1_Monday_July_7/' | relative_url }}" class="btn">📅 Day 1 Materials</a>
-  <a href="{{ '/Day2_Tuesday_July_8/' | relative_url }}" class="btn">📊 Day 2 Materials</a>
+  <a href="{{ '/Day2_Tuesday_July_8/' | relative_url }}" class="btn">📅 Day 2 Materials</a>
   <a href="{{ '/Resources/' | relative_url }}" class="btn">📚 Resources</a>
 </div>
 
