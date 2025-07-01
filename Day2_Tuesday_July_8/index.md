@@ -16,8 +16,8 @@ Day 2 focuses on automation, practical applications, and project work with AI-en
 - Introduction to ImageJ macro language
 - Using AI (ChatGPT, etc.) to generate and improve macros
 - Best practices for AI-assisted programming
-- 📊 [Presentation Slides](01_AI_Macro_Automation/2020418_ImageJMacro.pdf)
-- 🤖 [AI Enhancement Materials](01_AI_Macro_Automation/chatGPT_Materials/)
+- 📊 [Presentation Slides](01_AI_Macro_Automation/chatGPT_Materials/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx)
+
 
 ### 11:00–12:00: ImageJ macro practical session
 **Location**: `02_Macro_Practical_Session/`
@@ -25,6 +25,7 @@ Day 2 focuses on automation, practical applications, and project work with AI-en
 - Hands-on macro writing and execution
 - Working with the provided sample macros
 - Troubleshooting and debugging techniques
+- 📊 [Presentation Slides](02_Macro_Practical_Session/2020418_ImageJMacro.pdf)
 - 📄 [All Macro Scripts](02_Macro_Practical_Session/)
 
 ### 15:30–17:00: Project working groups
