@@ -16,7 +16,7 @@
 - [📁 Day 1 Materials](Day1_Monday_July_7/) - Introduction, Plugins, ilastik
 - [📁 Day 2 Materials](Day2_Tuesday_July_8/) - AI Macros, Practical Session, Projects
 - [📚 Resources](Resources/) - Sample Images, Manuals, ImageJ Macro / Python Scripts, Advanced Workflows
-- [🔧 Setup Instructions](#-setup-instructions)
+- [🔧 Installation & Setup](#-installation--setup-instructions)
 - [💡 Tips & Shortcuts](#-good-to-know)
 - [❓ Q&A Section](#questions--answers---hands-on)
 
@@ -77,12 +77,49 @@ This course introduces Fiji (ImageJ) through hands-on sample image exercises, su
 
 ---
 
-## 🔧 Setup Instructions
+## 🔧 Installation & Setup Instructions
 
-1. Open Fiji.
-2. Drag `.ijm` macro files into Fiji, or use `Plugins → Macros → Run`.
-3. Make sure to adjust save paths in the macros before running.
-4. Use built-in sample images: `File → Open Samples`.
+### Pre-Workshop Requirements
+Install these tools before the workshop begins:
+
+#### 🔬 **Day 1 - Morning: Introduction to FIJI**
+- **Fiji (ImageJ)**: Download from [fiji.sc](https://fiji.sc/) 
+  - Choose your OS version (Windows/Mac/Linux)
+  - Extract and run `ImageJ-win64.exe` (Windows) or equivalent
+  - No additional setup required
+
+#### 🧩 **Day 1 - Afternoon: FIJI Plugins Showcase**
+- **Plugin Update Sites**: In Fiji, go to `Help → Update → Manage Update Sites`
+  - Enable common sites: `ImageJ-ITK`, `Bio-Formats`, `3D ImageJ Suite`
+  - Restart Fiji after updates
+
+#### 🤖 **Day 1 - Evening: ilastik Interactive Segmentation**
+- **ilastik**: Download from [ilastik.org](https://www.ilastik.org/download.html)
+  - Install the appropriate version for your OS
+  - Test launch before workshop day
+
+#### 🧠 **Day 2 - Morning: AI Macro Automation**
+- **ChatGPT Account**: Sign up at [chat.openai.com](https://chat.openai.com/)
+  - Free account sufficient for workshop
+- **Text Editor**: VS Code, Notepad++, or similar for macro editing
+
+#### 📊 **Day 2 - Afternoon: Macro Practical Session**
+- **Workshop Materials**: Clone/download this repository
+  - Sample images in `images/` folder
+  - Macro files in `macros/` folder
+- **Fiji Setup**: 
+  - Drag `.ijm` files into Fiji to run
+  - Use `File → Open Samples` for built-in test images
+
+#### 🐍 **Optional: Python Scripts** (Advanced Users)
+- **Python 3.8+**: Download from [python.org](https://www.python.org/)
+- **Required packages**: `pip install numpy matplotlib opencv-python scikit-image`
+  - Scripts located in `Resources/Python_Scripts/`
+
+### Quick Test Setup
+1. **Fiji**: Open sample image with `File → Open Samples → Blobs`
+2. **ilastik**: Launch application and verify startup
+3. **Repository**: Ensure you can access workshop materials locally
 
 ---
 
