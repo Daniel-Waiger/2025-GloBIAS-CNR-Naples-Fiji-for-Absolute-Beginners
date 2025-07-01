@@ -10,6 +10,26 @@ body {
     line-height: 1.6;
 }
 
+/* Default Theme Variables (fallback) */
+:root {
+    --background-color: #1a1a28;
+    --text-color: #a18aff;
+    --navbar-bg: #2c2c3a;
+    --navbar-text: #a18aff;
+    --navbar-link: #a18aff;
+    --navbar-active-bg: #383850;
+    --navbar-active-text: #ffffff;
+    --navbar-hover-bg: #444465;
+    --navbar-hover-text: #ffffff;
+    --button-bg: #3a3a57;
+    --button-text: #d4cbff;
+    --button-hover-bg: #5a5a7e;
+    --footer-bg: #1a1a28;
+    --footer-text: #a18aff;
+    --section-border-color: #3a3a57;
+    --link-color: #d4cbff;
+}
+
 /* Theme Variables */
 :root[data-theme="light"] {
     --background-color: #fdfcf6;
