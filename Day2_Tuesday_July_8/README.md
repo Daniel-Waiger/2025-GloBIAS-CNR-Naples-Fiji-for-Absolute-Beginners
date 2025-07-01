@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Day 2 - Tuesday, July 8th, 2025"
+---
+
 # Day 2 - Tuesday, July 8th, 2025
 
 ## Course Overview

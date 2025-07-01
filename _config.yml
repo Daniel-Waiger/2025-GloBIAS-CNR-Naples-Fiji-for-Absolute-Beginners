@@ -1,0 +1,46 @@
+# GitHub Pages Configuration
+title: "Fiji for Beginners - GloBIAS & CNR Naples 2025"
+description: "Fluorescence Image Analysis Workshop Materials"
+author: "Daniel Waiger, Rocco D'Antuono, Ana Stojilijkovic, Sebastian Gonzalez Tirado"
+
+# Theme
+theme: minima
+# Alternative themes: jekyll-theme-minimal, jekyll-theme-cayman, jekyll-theme-slate
+
+# GitHub Pages settings
+baseurl: "/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners"
+url: "https://Daniel-Waiger.github.io"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections (optional - for organizing content)
+collections:
+  day1:
+    output: true
+    permalink: /:collection/:name/
+  day2:
+    output: true
+    permalink: /:collection/:name/
+
+# Navigation (optional)
+header_pages:
+  - README.md
+  - Day1_Monday_July_7/README.md
+  - Day2_Tuesday_July_8/README.md
+  - Resources/README.md
+
+# SEO and social
+twitter:
+  username: # your twitter username
+  card: summary
+
+# Google Analytics (optional)
+# google_analytics: UA-NNNNNNNN-N
