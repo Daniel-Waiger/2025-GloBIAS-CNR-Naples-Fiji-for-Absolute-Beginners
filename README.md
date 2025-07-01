@@ -4,9 +4,11 @@
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-CC--BY--SA%204.0-brightgreen"></a>
 </p>
 
-**Trainer**: Daniel Waiger  
+**Trainer**: Daniel Waiger | Rocco D'Antuono | Ana Stojilijkovic | Sebastian Gonzalez Tirado  
 **Event**: GloBIAS & CNR Naples 2025  
-**Dates**: July 7-8, 2025
+**Dates**: July 7-11, 2025
+
+**Workshop Website**: [Fluorescence image analysis course - GloBIAS and CNR Naples - 2025 | Introductory Course on BioImage Analysis for Microscopy - GloBIAS and CNR Naples 2025](https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_course-GloBIAS_CNR_Naples_2025/)
 
 ## 🔗 Quick Navigation
 - [📅 Course Schedule](#-course-schedule)
