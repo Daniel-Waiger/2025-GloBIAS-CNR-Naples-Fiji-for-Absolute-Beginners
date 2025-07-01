@@ -22,15 +22,15 @@
 
 <p align="center">
   <a href="https://imagej.net/software/fiji/">
-    <img src="https://imagej.github.io/images/fiji-icon.png" alt="Fiji" height="50">
+    <img src="assets/logos/fiji-logo.png" alt="Fiji" height="50">
   </a>
   &nbsp;&nbsp;
   <a href="https://www.ilastik.org/">
-    <img src="https://www.ilastik.org/img/ilastik-logo.svg" alt="ilastik" height="50">
+    <img src="assets/logos/ilastik-logo.png" alt="ilastik" height="50">
   </a>
   &nbsp;&nbsp;
   <a href="https://chat.openai.com/">
-    <img src="https://cdn.openai.com/chatgpt/logo.png" alt="ChatGPT" height="50">
+    <img src="assets/logos/chatgpt-logo.webp" alt="ChatGPT" height="50">
   </a>
 </p>
 
