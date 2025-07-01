@@ -21,7 +21,7 @@ description: Fluorescence Image Analysis Workshop Materials
 
 ---
 
-## 🎯 Workshop Overview - - **Fluorescence image analysis workshop**: (https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/)
+## 🎯 Workshop Overview - - **Fluorescence image analysis workshop**: [https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/](https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/)
 
 This intensive 5-day workshop introduces bioimage analysis fundamentals using Fiji, with hands-on sessions, interactive segmentation with ilastik, High Content Analysis with Cellprofiler, AI-enhanced macro development, and more.
 
