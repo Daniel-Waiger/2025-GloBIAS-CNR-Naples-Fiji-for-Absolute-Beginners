@@ -61,22 +61,6 @@ This course introduces Fiji (ImageJ) through hands-on sample image exercises, su
 
 ---
 
-## 🧾 ImageJ Macro Scripts Overview
-
-| Macro File | What It Does | Teaches | Link |
-|------------|-------------|---------|------|
-| `01_image_info_conversion.ijm` | Loads `M51`, shows metadata, converts to 8-bit with/without scaling | Bit-depth, profiles, scaling | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/01_image_info_conversion.ijm) |
-| `02_histogram_profiles.ijm` | Draws a line ROI, shows intensity profiles pre/post scaling | Line ROI, Plot Profile, scaling effects | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/02_histogram_profiles.ijm) |
-| `03_brightness_contrast.ijm` | Loads `gel_inv`, adjusts contrast, applies LUT | Display vs destructive changes | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/03_brightness_contrast.ijm) |
-| `04_channels_LUTs.ijm` | Opens RGB image, splits/merges channels, applies LUTs | Multichannel handling, color tools | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/04_channels_LUTs.ijm) |
-| `05_roi_measurement.ijm` | Opens `blobs`, draws ROIs, measures area/perimeter | ROI tools, Point tool, measurements | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/05_roi_measurement.ijm) |
-| `06_set_scale_bar.ijm` | Sets spatial scale using a known bar, adds and flattens scale bar | Calibration + overlays | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/06_set_scale_bar.ijm) |
-| `07_segmentation_particles.ijm` | Segments objects using threshold/watershed, analyzes particles | Segmentation, object counting | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/07_segmentation_particles.ijm) |
-| `08_masking_regions.ijm` | Creates and applies a binary mask to restrict analysis | Masking via image calculator | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/08_masking_regions.ijm) |
-| `09_ctcf_fluorescence.ijm` | Measures fluorescence, calculates corrected total cell fluorescence (CTCF) | Integrated density, background correction | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/09_ctcf_fluorescence.ijm) |
-
----
-
 ## 🔧 Installation & Setup Instructions
 
 ### Pre-Workshop Requirements
@@ -130,6 +114,23 @@ Install these tools before the workshop begins:
 - Use the ROI Manager and consistent naming (e.g., nuc1, nuc2) to organize your data.
 
 ---
+
+## 🧾 ImageJ Macro Scripts Overview
+
+| Macro File | What It Does | Teaches | Link |
+|------------|-------------|---------|------|
+| `01_image_info_conversion.ijm` | Loads `M51`, shows metadata, converts to 8-bit with/without scaling | Bit-depth, profiles, scaling | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/01_image_info_conversion.ijm) |
+| `02_histogram_profiles.ijm` | Draws a line ROI, shows intensity profiles pre/post scaling | Line ROI, Plot Profile, scaling effects | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/02_histogram_profiles.ijm) |
+| `03_brightness_contrast.ijm` | Loads `gel_inv`, adjusts contrast, applies LUT | Display vs destructive changes | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/03_brightness_contrast.ijm) |
+| `04_channels_LUTs.ijm` | Opens RGB image, splits/merges channels, applies LUTs | Multichannel handling, color tools | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/04_channels_LUTs.ijm) |
+| `05_roi_measurement.ijm` | Opens `blobs`, draws ROIs, measures area/perimeter | ROI tools, Point tool, measurements | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/05_roi_measurement.ijm) |
+| `06_set_scale_bar.ijm` | Sets spatial scale using a known bar, adds and flattens scale bar | Calibration + overlays | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/06_set_scale_bar.ijm) |
+| `07_segmentation_particles.ijm` | Segments objects using threshold/watershed, analyzes particles | Segmentation, object counting | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/07_segmentation_particles.ijm) |
+| `08_masking_regions.ijm` | Creates and applies a binary mask to restrict analysis | Masking via image calculator | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/08_masking_regions.ijm) |
+| `09_ctcf_fluorescence.ijm` | Measures fluorescence, calculates corrected total cell fluorescence (CTCF) | Integrated density, background correction | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/09_ctcf_fluorescence.ijm) |
+
+---
+
 
 ## 💬 Macro Code Blocks
 
