@@ -30,7 +30,7 @@ Welcome to Day 1 of the Fiji for Beginners course! This day covers foundational 
 - Interactive machine learning for segmentation
 - ilastik workflow and interface
 - Hands-on segmentation exercises
-- 📊 [Presentation Materials](03_Ilastik_Interactive_Segmentation/)
+- 📊 [Presentation Slides](03_Ilastik_Interactive_Segmentation/Ilastik%20%E2%80%93%20The%20Interactive%20Learning%20And%20Segmentation%20Toolkit.pptx)
 
 ## Learning Objectives
 By the end of Day 1, participants will:
