@@ -1,90 +1,133 @@
-/* General styles */
-body {
-    font-family: sans-serif;
-    margin: 0;
-    transition: background-color 0.3s, color 0.3s;
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Custom Navigation Bar */
+.main-nav {
+  background: linear-gradient(120deg, #159957, #155799);
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.container {
-    display: flex;
+.nav-container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.sidebar {
-    width: 250px;
-    padding: 20px;
-    position: fixed;
-    height: 100%;
-    overflow-y: auto;
+.nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
 }
 
-.sidebar ul li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
 }
 
-.content {
-    margin-left: 270px;
-    padding: 20px;
-    width: calc(100% - 270px);
+/* Responsive Navigation */
+@media screen and (max-width: 42em) {
+  .nav-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .nav-link {
+    text-align: center;
+  }
 }
 
-/* Dark Mode (default) */
-body.dark-mode {
-    background-color: #2c2c3e; /* Soft purple */
-    color: #e0e0e0;
+/* Custom styling for content */
+.main-content {
+  max-width: 64rem;
+  padding: 2rem 6rem;
+  margin: 0 auto;
+  font-size: 1.1rem;
 }
 
-body.dark-mode .sidebar {
-    background-color: #1e1e2f;
+/* Responsive content */
+@media screen and (max-width: 42em) {
+  .main-content {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
 }
 
-body.dark-mode .sidebar ul li a {
-    color: #90f0c0; /* Mint green */
+/* Style for logo images */
+.main-content img[alt="Fiji"], 
+.main-content img[alt="ilastik"], 
+.main-content img[alt="ChatGPT"] {
+  max-height: 80px;
+  margin: 0 1rem;
 }
 
-body.dark-mode .sidebar ul li a:hover {
-    background-color: #3c3c4e;
+/* Better spacing for lists */
+.main-content ul, 
+.main-content ol {
+  margin-bottom: 1rem;
 }
 
-/* Light Mode */
-body.light-mode {
-    background-color: #f0f8ff; /* Light blue */
-    color: #333;
+.main-content li {
+  margin-bottom: 0.5rem;
 }
 
-body.light-mode .sidebar {
-    background-color: #e6e0d4; /* Pale coffee */
+/* Style for code blocks */
+.main-content pre {
+  background-color: #f3f6fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 16px;
+  overflow: auto;
 }
 
-body.light-mode .sidebar ul li a {
-    color: #005f73;
+.main-content code {
+  background-color: #f3f6fa;
+  border-radius: 3px;
+  padding: 2px 4px;
+  font-size: 85%;
 }
 
-body.light-mode .sidebar ul li a:hover {
-    background-color: #d6c0a0;
+/* Highlight boxes for important information */
+.highlight-box {
+  background-color: #f8f9fa;
+  border-left: 4px solid #159957;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 6px 6px 0;
 }
 
-#theme-switcher {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid;
-    cursor: pointer;
+/* Custom button styles */
+.btn-custom {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
 }
 
-body.dark-mode #theme-switcher {
-    background-color: #90f0c0;
-    color: #1e1e2f;
-    border-color: #90f0c0;
-}
-
-body.light-mode #theme-switcher {
-    background-color: #005f73;
-    color: #f0f8ff;
-    border-color: #005f73;
+.btn-custom:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
 }

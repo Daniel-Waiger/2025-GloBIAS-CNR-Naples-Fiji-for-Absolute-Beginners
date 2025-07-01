@@ -4,8 +4,8 @@ description: "Fluorescence Image Analysis Workshop Materials"
 author: "Daniel Waiger, Rocco D'Antuono, Ana Stojilijkovic, Sebastian Gonzalez Tirado"
 
 # Theme
-theme: minima
-# Alternative themes: jekyll-theme-minimal, jekyll-theme-cayman, jekyll-theme-slate
+remote_theme: pages-themes/cayman@v0.2.0
+# Alternative: theme: minima
 
 # GitHub Pages settings
 baseurl: "/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners"
@@ -16,6 +16,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # Markdown settings
 markdown: kramdown
