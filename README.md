@@ -1,4 +1,4 @@
-# 🧬 Fiji for Beginners - Fluorescence Image Analysis Course – GloBIAS & CNR Naples 2025
+C# 🧬 Fiji for Beginners - Fluorescence Image Analysis Course – GloBIAS & CNR Naples 2025
 
 <p align="center">
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-CC--BY--SA%204.0-brightgreen"></a>
@@ -19,6 +19,22 @@
 - [🔧 Setup Instructions](#-setup-instructions)
 - [💡 Tips & Shortcuts](#-good-to-know)
 - [❓ Q&A Section](#questions--answers---hands-on)
+
+<p align="center">
+  <a href="https://imagej.net/software/fiji/">
+    <img src="https://imagej.github.io/images/fiji-icon.png" alt="Fiji" height="50">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.ilastik.org/">
+    <img src="https://www.ilastik.org/img/ilastik-logo.svg" alt="ilastik" height="50">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://chat.openai.com/">
+    <img src="https://cdn.openai.com/chatgpt/logo.png" alt="ChatGPT" height="50">
+  </a>
+</p>
+
+
 
 ## 📅 Course Schedule
 
