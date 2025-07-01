@@ -23,7 +23,7 @@ git push origin main
 ### 3. Access Your Site
 Your site will be available at:
 ```
-https://yourusername.github.io/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/
+https://Daniel-Waiger.github.io/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/
 ```
 
 ## What's Included
