@@ -27,7 +27,7 @@ Day 2 focuses on automation, practical applications, and project work with AI-en
 - Working with the provided sample macros
 - Troubleshooting and debugging techniques
 - 📊 [Presentation Slides](02_Macro_Practical_Session/2020418_ImageJMacro.pdf)
-- 📄 [All Macro Scripts](02_Macro_Practical_Session/)
+- 📄 [All Macro Scripts](02_Macro_Practical_Session/)   
 
 ### 15:30–17:00: Project working groups
 **Location**: `03_Project_Working_Groups/`
