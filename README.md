@@ -8,7 +8,7 @@
 **Event**: GloBIAS & CNR Naples 2025  
 **Dates**: July 7-11, 2025
 
-<a href="https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/" target="_blank">Workshop Website: Fluorescence image analysis workshop - GloBIAS and CNR Naples - 2025</a>
+<a href="https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/" target="_blank"> Workshop Website: Fluorescence image analysis workshop - GloBIAS and CNR Naples - 2025</a>
 
 ## 🔗 Quick Navigation
 - [📅 Course Schedule](#-course-schedule)
