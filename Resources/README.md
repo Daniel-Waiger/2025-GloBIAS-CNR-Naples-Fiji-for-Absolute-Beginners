@@ -1,3 +1,8 @@
+---
+layout: default
+title: Resources
+---
+
 # Resources
 
 This folder contains all shared resources used throughout the workshop.

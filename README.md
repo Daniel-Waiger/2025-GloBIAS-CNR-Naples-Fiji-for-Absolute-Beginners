@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 🧬 Fiji for Beginners - Fluorescence Image Analysis Course – GloBIAS & CNR Naples 2025
 
 <p align="center">

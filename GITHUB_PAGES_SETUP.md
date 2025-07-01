@@ -74,9 +74,70 @@ If you prefer manual setup without the workflow:
 
 ## Troubleshooting
 
+### 404 Error - Site Not Found
+
+If you're getting a 404 error, try these steps in order:
+
+#### 1. Check GitHub Pages Status
+1. Go to your repository on GitHub
+2. Click **Settings** → **Pages**
+3. Look for the status message:
+   - ✅ "Your site is published at..." = Working
+   - 🔄 "GitHub Pages is currently being built..." = Building
+   - ❌ Error message = Check Actions tab
+
+#### 2. Verify Repository Settings
+1. Make sure your repository is **public** (private repos need GitHub Pro for Pages)
+2. Check that the repository name matches exactly: `2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners`
+3. Verify your username is correct in the URL
+
+#### 3. Check GitHub Actions
+1. Go to **Actions** tab in your repository
+2. Look for failed builds (red X icons)
+3. Click on any failed build to see error details
+4. Common issues:
+   - Missing `index.md` file
+   - Syntax errors in `_config.yml`
+   - Invalid YAML front matter
+
+#### 4. Try Alternative URLs
+If the main URL doesn't work, try:
+- Without trailing slash: `https://Daniel-Waiger.github.io/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners`
+- With index.html: `https://Daniel-Waiger.github.io/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/index.html`
+- Check if it's live at GitHub's CDN: Go to Settings → Pages and click the link shown there
+
+#### 5. Wait for Propagation
+- GitHub Pages can take 5-10 minutes to deploy after first setup
+- Changes can take 1-2 minutes to appear after pushes
+
+#### 6. Quick Fix: Simplify Setup
+If still having issues, try this minimal approach:
+
+1. **Rename README.md to index.md**:
+```bash
+mv README.md index.md
+```
+
+2. **Create minimal _config.yml**:
+```yaml
+title: "Fiji for Beginners Workshop"
+baseurl: "/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners"
+url: "https://Daniel-Waiger.github.io"
+```
+
+3. **Push and test**:
+```bash
+git add .
+git commit -m "Simplify GitHub Pages setup"
+git push origin main
+```
+
+### Other Common Issues
+
 - **Site not loading?** Check the Actions tab for build errors
-- **Images not showing?** Ensure all image paths are relative
+- **Images not showing?** Ensure all image paths are relative (start with `assets/` not `/assets/`)
 - **Styling issues?** Clear browser cache and check console for errors
+- **Links broken?** Make sure all internal links use relative paths
 
 ## Local Development (Optional)
 
