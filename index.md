@@ -21,9 +21,9 @@ description: Fluorescence Image Analysis Workshop Materials
 
 ---
 
-## 🎯 Workshop Overview
+## 🎯 Workshop Overview - - **Fluorescence image analysis workshop**: (https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/)
 
-This intensive 2-day workshop introduces bioimage analysis fundamentals using Fiji, with hands-on sessions, interactive segmentation with ilastik, and AI-enhanced macro development.
+This intensive 5-day workshop introduces bioimage analysis fundamentals using Fiji, with hands-on sessions, interactive segmentation with ilastik, High Content Analysis with Cellprofiler, AI-enhanced macro development, and more.
 
 ## 🚀 Quick Navigation
 
@@ -53,7 +53,7 @@ This intensive 2-day workshop introduces bioimage analysis fundamentals using Fi
 
 - **Fiji (ImageJ)**: [Download here](https://imagej.net/software/fiji/downloads)
 - **ilastik**: [Download here](https://www.ilastik.org/download.html)
-- **Text Editor**: VS Code, Notepad++, or similar
+- **Text Editor**: VS Code, Fiji Script Editor
 
 ### Quick Setup
 
@@ -62,12 +62,6 @@ This intensive 2-day workshop introduces bioimage analysis fundamentals using Fi
 3. Clone or download this repository
 4. Follow session-specific setup instructions
 
-## 👥 Instructors
-
-- **Daniel Waiger** - Workshop Lead
-- **Rocco D'Antuono** - Technical Specialist  
-- **Ana Stojiljkovic** - Macro Development
-- **Sebastian Gonzalez Tirado** - Project Coordination
 
 ---
 
