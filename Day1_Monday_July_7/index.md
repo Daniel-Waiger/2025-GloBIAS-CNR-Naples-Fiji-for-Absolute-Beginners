@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Day 1 - Monday, July 7th, 2025"
+permalink: /Day1_Monday_July_7/
+---
+
 # Day 1 - Monday, July 7th, 2025
 
 ## Course Overview

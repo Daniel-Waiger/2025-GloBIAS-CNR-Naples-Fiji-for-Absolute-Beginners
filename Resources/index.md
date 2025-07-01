@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Resources"
+permalink: /Resources/
+---
+
 # Resources
 
 This folder contains all shared resources used throughout the workshop.

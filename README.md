@@ -1,13 +1,38 @@
----
-layout: default
-title: Home
----
-
-🧬 Fiji for Beginners - Fluorescence Image Analysis Course – GloBIAS & CNR Naples 2025
+# 2025 GloBIAS CNR Naples - Fiji for Absolute Beginners
 
 <p align="center">
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-CC--BY--SA%204.0-brightgreen"></a>
 </p>
+
+This repository contains materials for the bioimage analysis workshop focusing on Fiji, ilastik, and AI-enhanced macro development.
+
+## 🌐 GitHub Pages Website
+
+**Visit the workshop website**: [https://your-username.github.io/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/](https://your-username.github.io/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/)
+
+The website features:
+- Modern responsive design with dark/light mode toggle
+- Left-side navigation bar for easy access
+- Comprehensive installation instructions
+- Interactive session materials
+- Resource downloads and documentation
+
+## 📋 Quick Setup for GitHub Pages
+
+1. **Enable GitHub Pages**:
+   - Go to your repository settings
+   - Scroll to "Pages" section
+   - Select "Deploy from a branch" 
+   - Choose "main" branch and "/ (root)" folder
+   - Save settings
+
+2. **The site will automatically build and deploy** using the included GitHub Actions workflow.
+
+## 🎯 Workshop Contents
+
+- **Day 1**: Introduction to Fiji and ilastik
+- **Day 2**: AI-enhanced macro development 
+- **Resources**: Sample images, scripts, and documentation
 
 **Trainers**: Daniel Waiger | Rocco D'Antuono | Ana Stojilijkovic | Sebastian Gonzalez Tirado  
 **Event**: GloBIAS & CNR Naples 2025  
