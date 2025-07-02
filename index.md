@@ -603,6 +603,20 @@ html {
 </div>
 
 <!-- Quick Navigation -->
+<nav class="quick-nav">
+  <ul>
+    <li><a href="#schedule">📅 Schedule</a></li>
+    <li><a href="#objectives">🎯 Objectives</a></li>
+    <li><a href="#installation">🔧 Setup</a></li>
+    <li><a href="#features">✨ Features</a></li>
+    <li><a href="#materials">📚 Materials</a></li>
+    <li><a href="#macros">⚡ Macros</a></li>
+    <li><a href="#tips">💡 Tips</a></li>
+    <li><a href="#faq">❓ FAQ</a></li>
+    <li><a href="#contact">📞 Contact</a></li>
+  </ul>
+</nav>
+
 <section id="navigation">
   <h2>🚀 Session Materials Overview</h2>
   <div class="navigation-cards">
@@ -916,7 +930,7 @@ html {
 
 ## 📞 Contact & Support
 
-<div class="contact-section">
+<div class="contact-section" id="contact">
   <h2>Get in Touch</h2>
   <p>Questions about the workshop? Need technical support?</p>
   
@@ -1176,6 +1190,7 @@ html {
   <h2>🚀 Ready to Begin?</h2>
   <p style="font-size: 1.1rem; margin: 1rem 0;">Everything you need is right here on this page!</p>
   <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; flex-wrap: wrap;">
+    <a href="#navigation" class="btn">🚀 Overview</a>
     <a href="#schedule" class="btn">📅 View Schedule</a>
     <a href="#materials" class="btn">📚 Download Materials</a>
     <a href="#macros" class="btn">⚡ Get Macros</a>
