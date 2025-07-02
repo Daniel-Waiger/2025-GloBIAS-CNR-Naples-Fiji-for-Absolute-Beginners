@@ -4,9 +4,6 @@
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-CC--BY--SA%204.0-brightgreen"></a>
 </p>
 
-## 🎯 Single-Page Workshop Website
-
-This repository provides a **complete single-page website** for the bioimage analysis workshop focusing on Fiji, ilastik, and AI-enhanced macro development. Everything you need is consolidated into one easy-to-maintain page!
 
 **🌐 [View the Complete Workshop Website](https://your-github-username.github.io/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/)**
 
