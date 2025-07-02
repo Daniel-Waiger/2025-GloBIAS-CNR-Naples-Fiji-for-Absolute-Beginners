@@ -604,7 +604,7 @@ html {
 
 <!-- Quick Navigation -->
 <section id="navigation">
-  <h2>🚀 Workshop Materials Overview</h2>
+  <h2>🚀 Session Materials Overview</h2>
   <div class="navigation-cards">
     <div class="nav-card">
       <h3>📅 Day 1: Introduction to FIJI</h3>
@@ -642,29 +642,6 @@ html {
           <li>Python Scripts & Advanced Workflows</li>
         </ul>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- Workshop Stats -->
-<section>
-  <h2>� Workshop Overview</h2>
-  <div class="workshop-stats">
-    <div class="stat-card">
-      <div class="stat-number">2</div>
-      <div class="stat-label">Days</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number">6</div>
-      <div class="stat-label">Sessions</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number">9</div>
-      <div class="stat-label">Macro Scripts</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number">3</div>
-      <div class="stat-label">Software Tools</div>
     </div>
   </div>
 </section>
