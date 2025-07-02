@@ -7,26 +7,6 @@
 
 **🌐 [View the Complete Workshop Website](https://your-github-username.github.io/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/)**
 
-## ✨ What's Included on the Single Page:
-
-- **📅 Complete Schedule** - Detailed sessions for both days
-- **🎯 Learning Objectives** - Clear goals and outcomes
-- **� Installation Guide** - Step-by-step setup instructions
-- **� All Materials** - Direct downloads for slides, manuals, and resources
-- **⚡ 9 ImageJ Macros** - Interactive expandable macro library
-- **�️ Sample Images** - 8+ practice images for all skill levels
-- **� Trainer Profiles** - Meet your expert instructors
-- **💡 Tips & Shortcuts** - Essential knowledge for beginners
-- **❓ Interactive FAQ** - Common questions with expandable answers
-- **📞 Contact Information** - Links to main workshop website and support
-
-## 🚀 Quick Start
-
-1. **Visit the main page**: Open `index.md` or the GitHub Pages site
-2. **Everything is there**: No need to navigate between folders
-3. **Easy maintenance**: Update just one file for all changes
-4. **Mobile-friendly**: Responsive design works on all devices
-
 ## � Repository Structure
 
 ```
@@ -53,29 +33,6 @@
 **Format**: Hands-on bioimage analysis with AI-enhanced workflows
 
 <a href="https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/" target="_blank">🌐 Main Workshop Website</a>
-
-## � What Changed?
-
-- **Before**: Multiple folders and pages to navigate
-- **Now**: Everything consolidated into one beautiful single page
-- **Benefit**: Easier maintenance, better user experience, faster loading
-- **Archive**: All original structure preserved in `archive/` folder
-
-## 💼 For Maintainers
-
-- **Edit once**: All content is in `index.md`
-- **Styling**: Uses existing `assets/css/styles.css`
-- **Interactive**: FAQ and macros have expandable sections
-- **Navigation**: Smooth-scrolling anchor links
-- **Mobile**: Responsive design for all devices
-
-## 🛠️ Development
-
-The single-page site uses:
-- Jekyll/GitHub Pages compatible markdown
-- CSS variables from your existing `styles.css`
-- Vanilla JavaScript for interactivity
-- No external dependencies
 
 ---
 
