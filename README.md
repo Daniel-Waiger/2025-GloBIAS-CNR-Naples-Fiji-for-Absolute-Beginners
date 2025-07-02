@@ -15,7 +15,7 @@
 
 ### 📊 Direct Links to Key Materials
 - [Introduction Slides](slides/Day1/01_Introduction_to_Image_Analysis.pptx) - Day 1 Opening
-- [ilastik Tutorial](slides/Day1/Ilastik%20%E2%80%93%20The%20Interactive%20Learning%20And%20Segmentation%20Toolkit.pptx) - Interactive Segmentation
+- [ilastik Tutorial](slides/Day1/Ilastik – The Interactive Learning And Segmentation Toolkit.pptx) - Interactive Segmentation
 - [ChatGPT Enhancement Materials](slides/Day2/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx) - Day 2 Morning - Using AI Tools for Image Analysis
 - [AI Macro Programming](slides/Day2/2020418_ImageJMacro.pdf) - A Brief Overview on ImageJ Macro (With Ana Stojilijkovic)
 - [Interactive Workflows](slides/Day2/) - Advanced analysis examples
@@ -365,9 +365,9 @@ Brighter signals may result from larger or more compact cells. CTCF normalizatio
 
 ### 📊 Direct Links to Key Materials
 - [Introduction Slides](slides/Day1/01_Introduction_to_Image_Analysis.pptx) - Day 1 Opening
-- [ilastik Tutorial](slides/Day1/Ilastik%20%E2%80%93%20The%20Interactive%20Learning%20And%20Segmentation%20Toolkit.pptx) - Interactive Segmentation
+- [ilastik Tutorial](slides/Day1/Ilastik – The Interactive Learning And Segmentation Toolkit.pptx) - Interactive Segmentation
 - [AI Macro Programming](slides/Day2/2020418_ImageJMacro.pdf) - Day 2 Morning
 - [ChatGPT Enhancement Materials](slides/Day2/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx) - AI Integration
 - [Interactive Workflows](slides/Day2/) - Advanced analysis examples
 - [All Macro Scripts](macros/) - Complete macro library
-- [Training Manual](manuals/FIJI%20training.pdf) - Complete reference guide
+- [Training Manual](manuals/FIJI training.pdf) - Complete reference guide
