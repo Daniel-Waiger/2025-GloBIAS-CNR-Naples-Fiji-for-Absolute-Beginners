@@ -918,7 +918,7 @@ html {
       <strong>Day 1 Materials:</strong>
       <ul>
         <li><a href="slides/Day1/01_Introduction_to_Image_Analysis.pptx">Introduction to Image Analysis</a></li>
-        <li><a href="slides/Day1/Ilastik – The Interactive Learning And Segmentation Toolkit.pptx">ilastik Interactive Segmentation</a></li>
+        <li><a href="slides/Day1/Ilastik%20%E2%80%93%20The%20Interactive%20Learning%20And%20Segmentation%20Toolkit.pptx">ilastik Interactive Segmentation</a></li>
         <li><a href="slides/Day1/mitocheck/">Mitocheck Dataset</a> - Cell tracking examples</li>
       </ul>
       <strong>Day 2 Materials:</strong>

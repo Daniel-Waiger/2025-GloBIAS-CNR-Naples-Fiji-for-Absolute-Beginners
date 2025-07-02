@@ -204,7 +204,8 @@ section {
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-section li a {
+/* Remove the large navigation cards - these are the "second navbar" */
+/* section li a {
     display: flex;
     align-items: center;
     width: 250px;
@@ -225,19 +226,29 @@ section li a:hover {
     background: var(--button-hover-bg);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
+} */
 
-/* Lists */
+/* Simplified list styles for regular content */
 section ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2vw; /* Use viewport width */
     padding: 0;
-    list-style: none;
+    list-style: disc;
+    margin-left: 2rem;
 }
 
 section li {
-    margin: 0;
+    margin: 0.5rem 0;
+}
+
+/* Regular links in content */
+section a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+section a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
 }
 
 /* Images */
