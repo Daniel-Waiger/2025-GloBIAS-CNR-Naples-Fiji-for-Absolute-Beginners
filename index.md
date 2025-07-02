@@ -574,7 +574,7 @@ html {
     <h2 class="hero-subtitle">GloBIAS & CNR Naples 2025 Workshop</h2>
     
     <div class="workshop-badges">
-      <span class="badge">🗓️ July 7-8, 2025</span>
+      <span class="badge">🗓️ July 7-11, 2025</span>
       <span class="badge">🧪 Hands-on Training</span>
       <span class="badge">🤖 AI-Enhanced</span>
       <span class="badge">📊 Interactive</span>
@@ -597,7 +597,7 @@ html {
     </p>
     
     <a href="https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/" target="_blank" class="btn">
-      🌐 Main Workshop Website
+      🌐 Main Workshop Website - For the full programme
     </a>
   </div>
 </div>
@@ -677,7 +677,7 @@ html {
     <div class="session">
       <div class="session-time">13:00–14:00</div>
       <div class="session-title">Introduction to FIJI</div>
-      <div class="session-instructor">📊 <a href="Day1_Monday_July_7/01_Introduction_to_FIJI/Introduction%20to%20image%20analysis.pptx">Slides Available</a></div>
+      <div class="session-instructor">📊 <a href="slides/Introduction%20to%20image%20analysis.pptx">Slides Available</a></div>
     </div>
     <div class="session">
       <div class="session-time">14:00–15:00</div>
@@ -687,7 +687,7 @@ html {
     <div class="session">
       <div class="session-time">15:30–16:30</div>
       <div class="session-title">ilastik for interactive segmentation</div>
-      <div class="session-instructor">📁 <a href="Day1_Monday_July_7/03_Ilastik_Interactive_Segmentation/">Materials Available</a></div>
+      <div class="session-instructor">📁 <a href="slides/Day1_ilastik/">Materials Available</a></div>
     </div>
   </div>
   
@@ -696,12 +696,12 @@ html {
     <div class="session">
       <div class="session-time">09:30–10:30</div>
       <div class="session-title">Automatisation of bioimage analysis with ImageJ macro powered by large language models</div>
-      <div class="session-instructor">📊 <a href="Day2_Tuesday_July_8/01_AI_Macro_Automation/2020418_ImageJMacro.pdf">Slides Available</a></div>
+      <div class="session-instructor">📊 <a href="slides/Day2_Fiji_programming/2020418_ImageJMacro.pdf">Slides Available</a></div>
     </div>
     <div class="session">
       <div class="session-time">11:00–12:00</div>
       <div class="session-title">ImageJ macro practical session</div>
-      <div class="session-instructor">with Ana Stojiljković • 📄 <a href="Day2_Tuesday_July_8/02_Macro_Practical_Session/">Macros Available</a></div>
+      <div class="session-instructor">with Ana Stojiljković • 📄 <a href="macros/">Macros Available</a></div>
     </div>
     <div class="session">
       <div class="session-time">15:30–17:00</div>
@@ -988,10 +988,11 @@ html {
     <div class="step-content">
       <h4>Presentation Slides</h4>
       <ul>
-        <li><a href="archive/Day1_Monday_July_7/01_Introduction_to_FIJI/Introduction%20to%20image%20analysis.pptx">Introduction to Image Analysis</a> (Day 1)</li>
-        <li><a href="archive/Day2_Tuesday_July_8/01_AI_Macro_Automation/2020418_ImageJMacro.pdf">AI Macro Automation</a> (Day 2)</li>
-        <li><a href="archive/Day1_Monday_July_7/03_Ilastik_Interactive_Segmentation/Ilastik%20–%20The%20Interactive%20Learning%20And%20Segmentation%20Toolkit.pptx">ilastik Interactive Segmentation</a></li>
+        <li><a href="slides/Introduction%20to%20image%20analysis.pptx">Introduction to Image Analysis</a> (Day 1)</li>
+        <li><a href="slides/Day2_Fiji_programming/2020418_ImageJMacro.pdf">ImageJ Macro Programming</a> (Day 2)</li>
+        <li><a href="slides/Day1_ilastik/Ilastik%20–%20The%20Interactive%20Learning%20And%20Segmentation%20Toolkit.pptx">ilastik Interactive Segmentation</a></li>
         <li><a href="slides/chatGPT/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx">ChatGPT for Image Analysis</a></li>
+        <li><a href="slides/braslab_IA_talk.pptx">BrasLab Image Analysis Talk</a></li>
       </ul>
     </div>
   </div>
@@ -1044,7 +1045,7 @@ html {
     <div class="step-content">
       <h4>Advanced Workflows</h4>
       <ul>
-        <li><a href="archive/Day1_Monday_July_7/03_Ilastik_Interactive_Segmentation/mitocheck/">Mitocheck Dataset</a> - Cell tracking examples</li>
+        <li><a href="slides/Day1_ilastik/mitocheck/">Mitocheck Dataset</a> - Cell tracking examples</li>
         <li><a href="slides/chatGPT/FDA_vs_PI_Scatter_Plot_Combined.html">FDA vs PI Analysis</a> - Interactive visualization</li>
         <li><a href="slides/chatGPT/Tuna_Analysis_Protocol_Modern.html">Tuna Analysis Protocol</a> - Complete workflow</li>
       </ul>
