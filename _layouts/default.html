@@ -9,33 +9,6 @@
     {% include head-custom.html %}
 </head>
 <body>
-    <nav class="navbar">
-        <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
-            <span class="icon">🏠</span>
-            <span class="text">Home</span>
-        </a>
-        <a href="{{ '/Day1_Monday_July_7/' | relative_url }}" class="nav-link {% if page.url contains 'Day1_Monday_July_7' %}active{% endif %}">
-            <span class="icon">📅</span>
-            <span class="text">Day 1</span>
-        </a>
-        <a href="{{ '/Day2_Tuesday_July_8/' | relative_url }}" class="nav-link {% if page.url contains 'Day2_Tuesday_July_8' %}active{% endif %}">
-            <span class="icon">📅</span>
-            <span class="text">Day 2</span>
-        </a>
-        <a href="{{ '/Resources/' | relative_url }}" class="nav-link {% if page.url contains 'Resources' %}active{% endif %}">
-            <span class="icon">📚</span>
-            <span class="text">Resources</span>
-        </a>
-        
-        <button id="theme-toggle" class="theme-toggle">
-            🌙 Dark Mode
-        </button>
-        
-        <button id="collapse-toggle" class="theme-toggle">
-            ◀️
-        </button>
-    </nav>
-
     <main>
         {{ content }}
         
