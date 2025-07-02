@@ -399,24 +399,3 @@ See: [Martin Fitzpatrick's Guide](https://blog.martinfitzpatrick.com/measuring-c
 Brighter signals may result from larger or more compact cells. CTCF normalization removes size and background biases, giving a more reliable comparison.
 
 ---
-
-## 📚 Workshop Materials & Resources
-
-### 📁 Course Structure
-
-- **[Day 1 Materials](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/slides/Day1)** - Introduction, Plugin Showcase, ilastik
-- **[Day 2 Materials](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/slides/Day2)** - AI Automation, Practical Session, Projects
-- **[Sample Images](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/images)** - Practice datasets for exercises
-- **[Macro Scripts](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/macros)** - Ready-to-use ImageJ macros
-- **[Training Manuals](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/manuals)** - Reference documentation
-- **[Python Scripts](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/python%20library)** - Advanced analysis tools
-
-### 📊 Quick Resource Links
-
-- [Introduction Slides](slides/Day1/01_Introduction_to_Image_Analysis.pptx) - Day 1 Opening
-- [ilastik Tutorial](slides/Day1/Ilastik – The Interactive Learning And Segmentation Toolkit.pptx) - Interactive Segmentation
-- [AI Macro Programming](slides/Day2/2020418_ImageJMacro.pdf) - Day 2 Morning
-- [ChatGPT Enhancement Materials](slides/Day2/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx) - AI Integration
-- [Interactive Workflows](slides/Day2/) - Advanced analysis examples
-- [All Macro Scripts](macros/) - Complete macro library
-- [Training Manual](manuals/FIJI training.pdf) - Complete reference guide
