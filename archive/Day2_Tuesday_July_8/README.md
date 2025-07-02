@@ -1,6 +1,6 @@
 # Day 2 - Tuesday, July 8th, 2025
 
-## Course Overview
+## Session Overview
 Day 2 focuses on automation, practical applications, and project work with AI-enhanced macro development.
 
 ## Session Structure

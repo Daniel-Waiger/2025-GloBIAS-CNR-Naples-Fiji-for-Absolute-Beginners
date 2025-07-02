@@ -1,4 +1,4 @@
-# 📊 Workshop Slides Organization
+# 📊 Workshop Slides
 
 This folder contains all presentation materials organized by workshop day.
 

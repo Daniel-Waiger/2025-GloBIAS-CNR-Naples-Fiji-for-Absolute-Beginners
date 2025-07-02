@@ -4,8 +4,23 @@
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-CC--BY--SA%204.0-brightgreen"></a>
 </p>
 
-**Trainer**: Daniel Waiger | Rocco D'Antuono | Ana Stojilijkovic | Sebastian Gonzalez Tirado  
-**Event**: GloBIAS & CNR Naples 2025  
+**Trainers**: Daniel Waiger | Rocco D'Antuono | Ana Stojilijkovic | Sebastian Gonzalez Tirado  
+**Event**: 📚 Workshop Materials & Resources
+
+### 📁 Course Structure
+- **[Day 1 Materials](slides/Day1/)** - Introduction, Plugin Showcase, ilastik
+- **[Day 2 Materials](slides/Day2/)** - AI Automation, Practical Session, Projects
+- **[Sample Images](images/)** - Practice datasets for exercises
+- **[Macro Scripts](macros/)** - Ready-to-use ImageJ macros
+- **[Training Manuals](manuals/)** - Reference documentation
+
+### 📊 Direct Links to Key Materials
+- [Introduction Slides](slides/Day1/01_Introduction_to_Image_Analysis.pptx) - Day 1 Opening
+- [ilastik Tutorial](slides/Day1/Ilastik%20%E2%80%93%20The%20Interactive%20Learning%20And%20Segmentation%20Toolkit.pptx) - Interactive Segmentation
+- [AI Macro Programming](slides/Day2/2020418_ImageJMacro.pdf) - Day 2 Morning
+- [ChatGPT Enhancement Materials](slides/Day2/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx) - AI Integration
+- [Interactive Workflows](slides/Day2/) - Advanced analysis examples
+- [All Macro Scripts](macros/) - Complete macro library CNR Naples 2025  
 **Dates**: July 7-11, 2025
 
 <a href="https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/" target="_blank"> Workshop Website: Fluorescence image analysis workshop - GloBIAS and CNR Naples - 2025</a>
@@ -13,9 +28,11 @@
 ## 🔗 Quick Navigation
 - [📅 Course Schedule](#-course-schedule)
 - [🎯 Learning Objectives](#-learning-objectives) 
-- [📁 Day 1 Materials](Day1_Monday_July_7/) - Introduction, Plugins, ilastik
-- [📁 Day 2 Materials](Day2_Tuesday_July_8/) - AI Macros, Practical Session, Projects
-- [📚 Resources](Resources/) - Sample Images, Manuals, Python Scripts, Advanced Workflows
+- [📁 Day 1 Materials](slides/Day1/) - Introduction, Plugins, ilastik
+- [📁 Day 2 Materials](slides/Day2/) - AI Macros, Practical Session, Projects
+- [📚 Sample Images](images/) - Practice datasets for exercises
+- [⚡ Macro Scripts](macros/) - Ready-to-use ImageJ macros
+- [📖 Training Manuals](manuals/) - Reference documentation
 - [🔧 Setup Instructions](#-setup-instructions)
 - [💡 Tips & Shortcuts](#-good-to-know)
 - [❓ Q&A Section](#questions--answers---hands-on)
@@ -39,13 +56,13 @@
 ## 📅 Course Schedule
 
 ### Day 1 – Monday, 7th July 2025
-- **13:00–14:00**: Introduction to FIJI 📊 [Slides](Day1_Monday_July_7/01_Introduction_to_FIJI/Introduction%20to%20image%20analysis.pptx)
+- **13:00–14:00**: Introduction to FIJI 📊 [Slides](slides/Day1/01_Introduction_to_Image_Analysis.pptx)
 - **14:00–15:00**: Showcase of FIJI plugins for bioimage analysis (with Ana Stojilkovic)
-- **15:30–16:30**: ilastik for interactive segmentation 📊 [Materials](Day1_Monday_July_7/03_Ilastik_Interactive_Segmentation/)
+- **15:30–16:30**: ilastik for interactive segmentation 📊 [Materials](slides/Day1/)
 
 ### Day 2 – Tuesday, 8th July 2025
-- **09:30–10:30**: Automatisation of bioimage analysis with ImageJ macro powered by large language models 📊 [Slides](Day2_Tuesday_July_8/01_AI_Macro_Automation/2020418_ImageJMacro.pdf)
-- **11:00–12:00**: ImageJ macro practical session (with Ana Stojiljkovic) 📄 [Macros](Day2_Tuesday_July_8/02_Macro_Practical_Session/)
+- **09:30–10:30**: Automatisation of bioimage analysis with ImageJ macro powered by large language models 📊 [Slides](slides/Day2/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx)
+- **11:00–12:00**: ImageJ macro practical session (with Ana Stojiljkovic) 📄 [Macros](macros/) • 📊 [Programming Guide](slides/Day2/2020418_ImageJMacro.pdf)
 - **15:30–17:00**: Project working groups (with Sebastian Gonzalez Tirado)
 
 ---
@@ -67,15 +84,15 @@ This course introduces Fiji (ImageJ) through hands-on sample image exercises, su
 
 | Macro File | What It Does | Teaches | Link |
 |------------|-------------|---------|------|
-| `01_image_info_conversion.ijm` | Loads `M51`, shows metadata, converts to 8-bit with/without scaling | Bit-depth, profiles, scaling | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/01_image_info_conversion.ijm) |
-| `02_histogram_profiles.ijm` | Draws a line ROI, shows intensity profiles pre/post scaling | Line ROI, Plot Profile, scaling effects | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/02_histogram_profiles.ijm) |
-| `03_brightness_contrast.ijm` | Loads `gel_inv`, adjusts contrast, applies LUT | Display vs destructive changes | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/03_brightness_contrast.ijm) |
-| `04_channels_LUTs.ijm` | Opens RGB image, splits/merges channels, applies LUTs | Multichannel handling, color tools | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/04_channels_LUTs.ijm) |
-| `05_roi_measurement.ijm` | Opens `blobs`, draws ROIs, measures area/perimeter | ROI tools, Point tool, measurements | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/05_roi_measurement.ijm) |
-| `06_set_scale_bar.ijm` | Sets spatial scale using a known bar, adds and flattens scale bar | Calibration + overlays | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/06_set_scale_bar.ijm) |
-| `07_segmentation_particles.ijm` | Segments objects using threshold/watershed, analyzes particles | Segmentation, object counting | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/07_segmentation_particles.ijm) |
-| `08_masking_regions.ijm` | Creates and applies a binary mask to restrict analysis | Masking via image calculator | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/08_masking_regions.ijm) |
-| `09_ctcf_fluorescence.ijm` | Measures fluorescence, calculates corrected total cell fluorescence (CTCF) | Integrated density, background correction | [📄 Script](Day2_Tuesday_July_8/02_Macro_Practical_Session/09_ctcf_fluorescence.ijm) |
+| `01_image_info_conversion.ijm` | Loads `M51`, shows metadata, converts to 8-bit with/without scaling | Bit-depth, profiles, scaling | [📄 Script](macros/01_image_info_conversion.ijm) |
+| `02_histogram_profiles.ijm` | Draws a line ROI, shows intensity profiles pre/post scaling | Line ROI, Plot Profile, scaling effects | [📄 Script](macros/02_histogram_profiles.ijm) |
+| `03_brightness_contrast.ijm` | Loads `gel_inv`, adjusts contrast, applies LUT | Display vs destructive changes | [📄 Script](macros/03_brightness_contrast.ijm) |
+| `04_channels_LUTs.ijm` | Opens RGB image, splits/merges channels, applies LUTs | Multichannel handling, color tools | [📄 Script](macros/04_channels_LUTs.ijm) |
+| `05_roi_measurement.ijm` | Opens `blobs`, draws ROIs, measures area/perimeter | ROI tools, Point tool, measurements | [📄 Script](macros/05_roi_measurement.ijm) |
+| `06_set_scale_bar.ijm` | Sets spatial scale using a known bar, adds and flattens scale bar | Calibration + overlays | [📄 Script](macros/06_set_scale_bar.ijm) |
+| `07_segmentation_particles.ijm` | Segments objects using threshold/watershed, analyzes particles | Segmentation, object counting | [📄 Script](macros/07_segmentation_particles.ijm) |
+| `08_masking_regions.ijm` | Creates and applies a binary mask to restrict analysis | Masking via image calculator | [📄 Script](macros/08_masking_regions.ijm) |
+| `09_ctcf_fluorescence.ijm` | Measures fluorescence, calculates corrected total cell fluorescence (CTCF) | Integrated density, background correction | [📄 Script](macros/09_ctcf_fluorescence.ijm) |
 
 ---
 
