@@ -1,22 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Theme toggle functionality
-    let themeToggle = document.getElementById('theme-toggle');
+    let themeToggle = document.getElementById('themeToggle');
+    let themeIcon = document.getElementById('themeIcon');
+    let themeText = document.getElementById('themeText');
     
     // Load saved theme or default to dark
     const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
     
-    // Create theme toggle button if it doesn't exist
+    // Create theme toggle button if it doesn't exist (fallback for non-index pages)
     if (!themeToggle) {
         themeToggle = document.createElement('button');
-        themeToggle.id = 'theme-toggle';
+        themeToggle.id = 'themeToggle';
         themeToggle.className = 'theme-toggle';
         themeToggle.setAttribute('aria-label', 'Toggle theme');
+        themeToggle.innerHTML = '<span id="themeIcon">' + (savedTheme === 'dark' ? '☀️' : '🌙') + '</span><span id="themeText">' + (savedTheme === 'dark' ? 'Light' : 'Dark') + '</span>';
         document.body.appendChild(themeToggle);
+        themeIcon = document.getElementById('themeIcon');
+        themeText = document.getElementById('themeText');
     }
     
     // Set initial button content
-    themeToggle.innerHTML = savedTheme === 'dark' ? '☀️' : '🌙';
+    updateThemeButton(savedTheme);
     
     // Add click event listener
     themeToggle.addEventListener('click', function() {
@@ -26,9 +31,24 @@ document.addEventListener('DOMContentLoaded', function() {
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         
-        // Update button icon
-        this.innerHTML = newTheme === 'dark' ? '☀️' : '🌙';
+        // Update button content
+        updateThemeButton(newTheme);
     });
+    
+    function updateThemeButton(theme) {
+        if (themeIcon && themeText) {
+            if (theme === 'dark') {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light';
+            } else {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark';
+            }
+        } else if (themeToggle) {
+            // Fallback for simple button
+            themeToggle.innerHTML = theme === 'dark' ? '☀️' : '🌙';
+        }
+    }
     
     // Smooth scrolling for navigation links (support for index.md navigation)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

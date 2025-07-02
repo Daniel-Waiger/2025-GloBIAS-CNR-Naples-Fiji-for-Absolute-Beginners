@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Fiji for Beginners Workshop - GloBIAS & CNR Naples 2025
+title: Fiji and Friends for Beginners Workshop - GloBIAS & CNR Naples 2025
 description: Fluorescence Image Analysis Workshop Materials
 ---
 
@@ -615,6 +615,10 @@ html {
     <li><a href="#faq">❓ FAQ</a></li>
     <li><a href="#contact">📞 Contact</a></li>
   </ul>
+  <button class="theme-toggle" id="themeToggle">
+    <span id="themeIcon">🌙</span>
+    <span id="themeText">Dark</span>
+  </button>
 </nav>
 
 ## 📅 Detailed Schedule
@@ -883,26 +887,6 @@ html {
       </p>
     </div>
   </div>
-</div>
-
-## 📞 Contact & Support
-
-<div class="contact-section" id="contact">
-  <h2>Get in Touch</h2>
-  <p>Questions about the workshop? Need technical support?</p>
-  
-  <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; flex-wrap: wrap;">
-    <a href="https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/" target="_blank" class="btn">
-      🌐 Workshop Website
-    </a>
-    <a href="https://github.com/GloBIAS-bioimage-analysts" target="_blank" class="btn">
-      💻 GloBIAS GitHub
-    </a>
-  </div>
-  
-  <p><strong>Event:</strong> GloBIAS & CNR Naples 2025<br>
-  <strong>Dates:</strong> July 7-8, 2025<br>
-  <strong>Location:</strong> CNR Naples, Italy</p>
 </div>
 
 ## 📚 Workshop Materials & Downloads

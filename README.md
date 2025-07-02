@@ -20,7 +20,9 @@
 - [AI Macro Programming](slides/Day2/2020418_ImageJMacro.pdf) - Day 2 Morning
 - [ChatGPT Enhancement Materials](slides/Day2/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx) - AI Integration
 - [Interactive Workflows](slides/Day2/) - Advanced analysis examples
-- [All Macro Scripts](macros/) - Complete macro library CNR Naples 2025  
+- [All Macro Scripts](macros/) - Complete macro library
+
+**Event**: GloBIAS & CNR Naples 2025  
 **Dates**: July 7-11, 2025
 
 <a href="https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/" target="_blank"> Workshop Website: Fluorescence image analysis workshop - GloBIAS and CNR Naples - 2025</a>
@@ -39,15 +41,15 @@
 
 <p align="center">
   <a href="https://imagej.net/software/fiji/">
-    <img src="https://imagej.github.io/images/fiji-icon.png" alt="Fiji" height="50">
+    <img src="assets/logos/fiji-logo.png" alt="Fiji" height="50">
   </a>
   &nbsp;&nbsp;
   <a href="https://www.ilastik.org/">
-    <img src="https://www.ilastik.org/img/ilastik-logo.svg" alt="ilastik" height="50">
+    <img src="assets/logos/ilastik-logo.png" alt="ilastik" height="50">
   </a>
   &nbsp;&nbsp;
   <a href="https://chat.openai.com/">
-    <img src="https://cdn.openai.com/chatgpt/logo.png" alt="ChatGPT" height="50">
+    <img src="assets/logos/chatgpt-logo.webp" alt="ChatGPT" height="50">
   </a>
 </p>
 
@@ -354,15 +356,19 @@ Brighter signals may result from larger or more compact cells. CTCF normalizatio
 
 ## 📚 Workshop Materials & Resources
 
-### � Course Structure
-- **[Day 1 Materials](Day1_Monday_July_7/)** - Introduction, Plugin Showcase, ilastik
-- **[Day 2 Materials](Day2_Tuesday_July_8/)** - AI Automation, Practical Session, Projects
-- **[Resources](Resources/)** - Sample Images, Manuals, Python Scripts, Advanced Workflows
+### 📁 Course Structure
+- **[Day 1 Materials](slides/Day1/)** - Introduction, Plugin Showcase, ilastik
+- **[Day 2 Materials](slides/Day2/)** - AI Automation, Practical Session, Projects
+- **[Sample Images](images/)** - Practice datasets for exercises
+- **[Macro Scripts](macros/)** - Ready-to-use ImageJ macros
+- **[Training Manuals](manuals/)** - Reference documentation
+- **[Python Scripts](python%20library/)** - Advanced analysis tools
 
 ### 📊 Direct Links to Key Materials
-- [Introduction Slides](Day1_Monday_July_7/01_Introduction_to_FIJI/Introduction%20to%20image%20analysis.pptx) - Day 1 Opening
-- [AI Macro Programming](Day2_Tuesday_July_8/01_AI_Macro_Automation/2020418_ImageJMacro.pdf) - Day 2 Morning
-- [ChatGPT Enhancement Materials](Day2_Tuesday_July_8/01_AI_Macro_Automation/chatGPT_Materials/) - AI Integration
-- [Sample Images](Resources/Sample_Images/) - Practice datasets
-- [Training Manuals](Resources/Training_Manuals/) - Reference documentation
-- [Advanced Workflows](Resources/Advanced_Workflows/) - Complex analysis examples
+- [Introduction Slides](slides/Day1/01_Introduction_to_Image_Analysis.pptx) - Day 1 Opening
+- [ilastik Tutorial](slides/Day1/Ilastik%20%E2%80%93%20The%20Interactive%20Learning%20And%20Segmentation%20Toolkit.pptx) - Interactive Segmentation
+- [AI Macro Programming](slides/Day2/2020418_ImageJMacro.pdf) - Day 2 Morning
+- [ChatGPT Enhancement Materials](slides/Day2/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx) - AI Integration
+- [Interactive Workflows](slides/Day2/) - Advanced analysis examples
+- [All Macro Scripts](macros/) - Complete macro library
+- [Training Manual](manuals/FIJI%20training.pdf) - Complete reference guide
