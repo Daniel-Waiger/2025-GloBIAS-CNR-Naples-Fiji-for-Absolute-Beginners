@@ -617,49 +617,6 @@ html {
   </ul>
 </nav>
 
-<section id="navigation">
-  <h2>🚀 Session Materials Overview</h2>
-  <div class="navigation-cards">
-    <div class="nav-card">
-      <h3>📅 Day 1: Introduction to FIJI</h3>
-      <p>Learn the fundamentals of bioimage analysis with FIJI and explore interactive segmentation with ilastik</p>
-      <div style="text-align: left; margin-top: 1rem;">
-        <strong>Sessions:</strong>
-        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
-          <li>Introduction to FIJI (13:00-14:00)</li>
-          <li>Plugin Showcase (14:00-15:00)</li>
-          <li>ilastik Interactive Segmentation (15:30-16:30)</li>
-        </ul>
-      </div>
-    </div>
-    <div class="nav-card">
-      <h3>📅 Day 2: AI-Enhanced Macros</h3>
-      <p>Automate your analysis workflows with ImageJ macros powered by AI and work on practical projects</p>
-      <div style="text-align: left; margin-top: 1rem;">
-        <strong>Sessions:</strong>
-        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
-          <li>AI Macro Automation (09:30-10:30)</li>
-          <li>Practical Session (11:00-12:00)</li>
-          <li>Project Working Groups (15:30-17:00)</li>
-        </ul>
-      </div>
-    </div>
-    <div class="nav-card">
-      <h3>📚 Complete Resource Library</h3>
-      <p>Access all sample images, training manuals, macro scripts, and advanced workflows in one place</p>
-      <div style="text-align: left; margin-top: 1rem;">
-        <strong>Includes:</strong>
-        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
-          <li>20+ Sample Images</li>
-          <li>9 ImageJ Macro Scripts</li>
-          <li>Training Manuals & Slides</li>
-          <li>Python Scripts & Advanced Workflows</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
 ## 📅 Detailed Schedule
 
 <div id="schedule" class="schedule-grid">
@@ -668,7 +625,7 @@ html {
     <div class="session">
       <div class="session-time">13:00–14:00</div>
       <div class="session-title">Introduction to FIJI</div>
-      <div class="session-instructor">📊 <a href="slides/Introduction%20to%20image%20analysis.pptx">Slides Available</a></div>
+      <div class="session-instructor">📊 <a href="slides/Day1/01_Introduction_to_Image_Analysis.pptx">Slides Available</a></div>
     </div>
     <div class="session">
       <div class="session-time">14:00–15:00</div>
@@ -678,7 +635,7 @@ html {
     <div class="session">
       <div class="session-time">15:30–16:30</div>
       <div class="session-title">ilastik for interactive segmentation</div>
-      <div class="session-instructor">📁 <a href="slides/Day1_ilastik/">Materials Available</a></div>
+      <div class="session-instructor">📁 <a href="slides/Day1/">Day 1 Materials Available</a></div>
     </div>
   </div>
   
@@ -687,12 +644,12 @@ html {
     <div class="session">
       <div class="session-time">09:30–10:30</div>
       <div class="session-title">Automatisation of bioimage analysis with ImageJ macro powered by large language models</div>
-      <div class="session-instructor">📊 <a href="slides/Day2_Fiji_programming/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx">Slides Available</a></div>
+      <div class="session-instructor">📊 <a href="slides/Day2/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx">Slides Available</a></div>
     </div>
     <div class="session">
       <div class="session-time">11:00–12:00</div>
       <div class="session-title">ImageJ macro practical session</div>
-      <div class="session-instructor">with Daniel Waiger and Ana Stojiljković • 📊 <a href="slides/Day2_Fiji_programming/2020418_ImageJMacro.pdf">Programming Guide</a> • 📄 <a href="macros/">Macros Available</a></div>
+      <div class="session-instructor">with Daniel Waiger and Ana Stojiljković • 📊 <a href="slides/Day2/2020418_ImageJMacro.pdf">Programming Guide</a> • 📄 <a href="macros/">Macros Available</a></div>
     </div>
     </div>
     <div class="session">
@@ -958,12 +915,18 @@ html {
     <div class="step-number">📊</div>
     <div class="step-content">
       <h4>Presentation Slides</h4>
+      <strong>Day 1 Materials:</strong>
       <ul>
-        <li><a href="slides/Introduction%20to%20image%20analysis.pptx">Introduction to Image Analysis</a> (Day 1)</li>
-        <li><a href="slides/Day2_Fiji_programming/2020418_ImageJMacro.pdf">ImageJ Macro Programming</a> (Day 2)</li>
-        <li><a href="slides/Day1_ilastik/Ilastik%20–%20The%20Interactive%20Learning%20And%20Segmentation%20Toolkit.pptx">ilastik Interactive Segmentation</a></li>
-        <li><a href="slides/chatGPT/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx">ChatGPT for Image Analysis</a></li>
-        <li><a href="slides/braslab_IA_talk.pptx">BrasLab Image Analysis Talk</a></li>
+        <li><a href="slides/Day1/01_Introduction_to_Image_Analysis.pptx">Introduction to Image Analysis</a></li>
+        <li><a href="slides/Day1/Ilastik – The Interactive Learning And Segmentation Toolkit.pptx">ilastik Interactive Segmentation</a></li>
+        <li><a href="slides/Day1/mitocheck/">Mitocheck Dataset</a> - Cell tracking examples</li>
+      </ul>
+      <strong>Day 2 Materials:</strong>
+      <ul>
+        <li><a href="slides/Day2/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx">ChatGPT for Image Analysis</a></li>
+        <li><a href="slides/Day2/2020418_ImageJMacro.pdf">ImageJ Macro Programming Guide</a></li>
+        <li><a href="slides/Day2/FDA_vs_PI_Scatter_Plot_Combined.html">FDA vs PI Analysis</a> - Interactive visualization</li>
+        <li><a href="slides/Day2/Tuna_Analysis_Protocol_Modern.html">Tuna Analysis Protocol</a> - Complete workflow</li>
       </ul>
     </div>
   </div>
@@ -1014,11 +977,11 @@ html {
   <div class="step">
     <div class="step-number">🔬</div>
     <div class="step-content">
-      <h4>Advanced Workflows</h4>
+      <h4>Advanced Workflows & Examples</h4>
       <ul>
-        <li><a href="slides/Day1_ilastik/mitocheck/">Mitocheck Dataset</a> - Cell tracking examples</li>
-        <li><a href="slides/chatGPT/FDA_vs_PI_Scatter_Plot_Combined.html">FDA vs PI Analysis</a> - Interactive visualization</li>
-        <li><a href="slides/chatGPT/Tuna_Analysis_Protocol_Modern.html">Tuna Analysis Protocol</a> - Complete workflow</li>
+        <li><a href="slides/Day1/mitocheck/">Mitocheck Dataset</a> - Cell tracking examples</li>
+        <li><a href="slides/Day2/FDA_vs_PI_Scatter_Plot_Combined.html">FDA vs PI Analysis</a> - Interactive visualization</li>
+        <li><a href="slides/Day2/Tuna_Analysis_Protocol_Modern.html">Tuna Analysis Protocol</a> - Complete workflow</li>
       </ul>
     </div>
   </div>
@@ -1190,11 +1153,11 @@ html {
   <h2>🚀 Ready to Begin?</h2>
   <p style="font-size: 1.1rem; margin: 1rem 0;">Everything you need is right here on this page!</p>
   <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; flex-wrap: wrap;">
-    <a href="#navigation" class="btn">🚀 Overview</a>
     <a href="#schedule" class="btn">📅 View Schedule</a>
     <a href="#materials" class="btn">📚 Download Materials</a>
     <a href="#macros" class="btn">⚡ Get Macros</a>
     <a href="#installation" class="btn">🔧 Setup Guide</a>
+    <a href="#tips" class="btn">💡 Tips & FAQ</a>
   </div>
   <p style="margin-top: 2rem; opacity: 0.8;">
     <strong>Note:</strong> All original organized folders have been moved to the <code>archive/</code> directory for reference.
