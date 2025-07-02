@@ -1,65 +1,65 @@
-# 2025 GloBIAS CNR Naples - Fiji for Absolute Beginners
+# 🧬 Fiji for Beginners - Fluorescence Image Analysis Course – GloBIAS & CNR Naples 2025
 
 <p align="center">
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-CC--BY--SA%204.0-brightgreen"></a>
 </p>
 
-
-**🌐 [View the Complete Workshop Website](https://your-github-username.github.io/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/)**
-
-## � Repository Structure
-
-```
-├── index.md                    # 🌟 MAIN SINGLE-PAGE WEBSITE
-├── assets/                     # CSS, logos, and styling
-├── images/                     # Sample images for practice
-├── macros/                     # 9 ImageJ macro scripts
-├── slides/                     # Presentation materials
-├── manuals/                    # Training documentation
-├── python library/             # Python scripts for advanced users
-├── archive/                    # 📦 Original organized folders (backup)
-│   ├── Day1_Monday_July_7/     # Day 1 materials (archived)
-│   ├── Day2_Tuesday_July_8/    # Day 2 materials (archived)
-│   ├── Resources/              # Resource library (archived)
-│   └── STRUCTURE_OVERVIEW.md   # Old structure docs (archived)
-└── README.md                   # This file
-```
-
-## 🎓 Workshop Details
-
-**Trainers**: Daniel Waiger | Rocco D'Antuono | Ana Stojilijkovic | Sebastian Gonzalez Tirado  
+**Trainer**: Daniel Waiger | Rocco D'Antuono | Ana Stojilijkovic | Sebastian Gonzalez Tirado  
 **Event**: GloBIAS & CNR Naples 2025  
-**Dates**: July 7-8, 2025  
-**Format**: Hands-on bioimage analysis with AI-enhanced workflows
+**Dates**: July 7-11, 2025
 
-<a href="https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/" target="_blank">🌐 Main Workshop Website</a>
+<a href="https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/" target="_blank"> Workshop Website: Fluorescence image analysis workshop - GloBIAS and CNR Naples - 2025</a>
+
+## 🔗 Quick Navigation
+- [📅 Course Schedule](#-course-schedule)
+- [🎯 Learning Objectives](#-learning-objectives) 
+- [📁 Day 1 Materials](Day1_Monday_July_7/) - Introduction, Plugins, ilastik
+- [📁 Day 2 Materials](Day2_Tuesday_July_8/) - AI Macros, Practical Session, Projects
+- [📚 Resources](Resources/) - Sample Images, Manuals, Python Scripts, Advanced Workflows
+- [🔧 Setup Instructions](#-setup-instructions)
+- [💡 Tips & Shortcuts](#-good-to-know)
+- [❓ Q&A Section](#questions--answers---hands-on)
+
+<p align="center">
+  <a href="https://imagej.net/software/fiji/">
+    <img src="https://imagej.github.io/images/fiji-icon.png" alt="Fiji" height="50">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.ilastik.org/">
+    <img src="https://www.ilastik.org/img/ilastik-logo.svg" alt="ilastik" height="50">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://chat.openai.com/">
+    <img src="https://cdn.openai.com/chatgpt/logo.png" alt="ChatGPT" height="50">
+  </a>
+</p>
+
+
+
+## 📅 Course Schedule
+
+### Day 1 – Monday, 7th July 2025
+- **13:00–14:00**: Introduction to FIJI 📊 [Slides](Day1_Monday_July_7/01_Introduction_to_FIJI/Introduction%20to%20image%20analysis.pptx)
+- **14:00–15:00**: Showcase of FIJI plugins for bioimage analysis (with Ana Stojilkovic)
+- **15:30–16:30**: ilastik for interactive segmentation 📊 [Materials](Day1_Monday_July_7/03_Ilastik_Interactive_Segmentation/)
+
+### Day 2 – Tuesday, 8th July 2025
+- **09:30–10:30**: Automatisation of bioimage analysis with ImageJ macro powered by large language models 📊 [Slides](Day2_Tuesday_July_8/01_AI_Macro_Automation/2020418_ImageJMacro.pdf)
+- **11:00–12:00**: ImageJ macro practical session (with Ana Stojiljkovic) 📄 [Macros](Day2_Tuesday_July_8/02_Macro_Practical_Session/)
+- **15:30–17:00**: Project working groups (with Sebastian Gonzalez Tirado)
 
 ---
 
-**Ready to explore?** 🚀 Visit the main website by opening `index.md` or accessing the GitHub Pages URL!
-  - Sample images in `images/` folder
-  - Macro files in `macros/` folder
-- **Fiji Setup**: 
-  - Drag `.ijm` files into Fiji to run
-  - Use `File → Open Samples` for built-in test images
+## 🎯 Learning Objectives  
+This course introduces Fiji (ImageJ) through hands-on sample image exercises, supported by beginner-friendly macros and structured learning goals:
 
-### Quick Test Setup
-1. **Fiji**: Open sample image with `File → Open Samples → Blobs`
-2. **ilastik**: Launch application and verify startup
-3. **Repository**: Ensure you can access workshop materials locally
-
----
-
-## 🧠 Good to Know
-
-- Use `Ctrl+I` (`Image → Show Info`) to inspect metadata and format.
-- Use `Ctrl+H` (`Analyze → Histogram`) to understand pixel distributions.
-- Toggle scaling via `Edit → Options → Conversion` before converting to 8-bit.
-- Press `T` to add any selection to the ROI Manager.
-- Use `Ctrl+M` to measure selections, `Ctrl+Shift+T` to threshold, `Shift+Ctrl+A` to analyze particles.
-- Save results from the Results window (`Ctrl+S`), or use macros for automation.
-- Avoid using “Apply” in contrast unless you're finalizing the image for export.
-- Use the ROI Manager and consistent naming (e.g., nuc1, nuc2) to organize your data.
+- Image loading and bit-depth conversion  
+- Intensity histograms and scaling effects  
+- Contrast adjustment and LUTs  
+- ROI tools and intensity measurements  
+- Spatial calibration and scale bars  
+- Automatic segmentation and particle analysis  
+- BONUS: Region masking and batch processing
 
 ---
 
@@ -79,6 +79,27 @@
 
 ---
 
+## 🔧 Setup Instructions
+
+1. Open Fiji.
+2. Drag `.ijm` macro files into Fiji, or use `Plugins → Macros → Run`.
+3. Make sure to adjust save paths in the macros before running.
+4. Use built-in sample images: `File → Open Samples`.
+
+---
+
+## 🧠 Good to Know
+
+- Use `Ctrl+I` (`Image → Show Info`) to inspect metadata and format.
+- Use `Ctrl+H` (`Analyze → Histogram`) to understand pixel distributions.
+- Toggle scaling via `Edit → Options → Conversion` before converting to 8-bit.
+- Press `T` to add any selection to the ROI Manager.
+- Use `Ctrl+M` to measure selections, `Ctrl+Shift+T` to threshold, `Shift+Ctrl+A` to analyze particles.
+- Save results from the Results window (`Ctrl+S`), or use macros for automation.
+- Avoid using “Apply” in contrast unless you're finalizing the image for export.
+- Use the ROI Manager and consistent naming (e.g., nuc1, nuc2) to organize your data.
+
+---
 
 ## 💬 Macro Code Blocks
 
@@ -328,4 +349,3 @@ Brighter signals may result from larger or more compact cells. CTCF normalizatio
 - [Sample Images](Resources/Sample_Images/) - Practice datasets
 - [Training Manuals](Resources/Training_Manuals/) - Reference documentation
 - [Advanced Workflows](Resources/Advanced_Workflows/) - Complex analysis examples
-
