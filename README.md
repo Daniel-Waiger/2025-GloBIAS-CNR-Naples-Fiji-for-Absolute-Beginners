@@ -4,100 +4,85 @@
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-CC--BY--SA%204.0-brightgreen"></a>
 </p>
 
-This repository contains materials for the bioimage analysis workshop focusing on Fiji, ilastik, and AI-enhanced macro development.
+## 🎯 Single-Page Workshop Website
 
+This repository provides a **complete single-page website** for the bioimage analysis workshop focusing on Fiji, ilastik, and AI-enhanced macro development. Everything you need is consolidated into one easy-to-maintain page!
 
-## 🎯 Workshop Contents
+**🌐 [View the Complete Workshop Website](https://your-github-username.github.io/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/)**
 
-- **Day 1**: Introduction to Fiji and ilastik
-- **Day 2**: AI-enhanced macro development 
-- **Resources**: Sample images, scripts, and documentation
+## ✨ What's Included on the Single Page:
+
+- **📅 Complete Schedule** - Detailed sessions for both days
+- **🎯 Learning Objectives** - Clear goals and outcomes
+- **� Installation Guide** - Step-by-step setup instructions
+- **� All Materials** - Direct downloads for slides, manuals, and resources
+- **⚡ 9 ImageJ Macros** - Interactive expandable macro library
+- **�️ Sample Images** - 8+ practice images for all skill levels
+- **� Trainer Profiles** - Meet your expert instructors
+- **💡 Tips & Shortcuts** - Essential knowledge for beginners
+- **❓ Interactive FAQ** - Common questions with expandable answers
+- **📞 Contact Information** - Links to main workshop website and support
+
+## 🚀 Quick Start
+
+1. **Visit the main page**: Open `index.md` or the GitHub Pages site
+2. **Everything is there**: No need to navigate between folders
+3. **Easy maintenance**: Update just one file for all changes
+4. **Mobile-friendly**: Responsive design works on all devices
+
+## � Repository Structure
+
+```
+├── index.md                    # 🌟 MAIN SINGLE-PAGE WEBSITE
+├── assets/                     # CSS, logos, and styling
+├── images/                     # Sample images for practice
+├── macros/                     # 9 ImageJ macro scripts
+├── slides/                     # Presentation materials
+├── manuals/                    # Training documentation
+├── python library/             # Python scripts for advanced users
+├── archive/                    # 📦 Original organized folders (backup)
+│   ├── Day1_Monday_July_7/     # Day 1 materials (archived)
+│   ├── Day2_Tuesday_July_8/    # Day 2 materials (archived)
+│   ├── Resources/              # Resource library (archived)
+│   └── STRUCTURE_OVERVIEW.md   # Old structure docs (archived)
+└── README.md                   # This file
+```
+
+## 🎓 Workshop Details
 
 **Trainers**: Daniel Waiger | Rocco D'Antuono | Ana Stojilijkovic | Sebastian Gonzalez Tirado  
 **Event**: GloBIAS & CNR Naples 2025  
-**Dates**: July 7-11, 2025
+**Dates**: July 7-8, 2025  
+**Format**: Hands-on bioimage analysis with AI-enhanced workflows
 
-<a href="https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/" target="_blank"> Workshop Website: Fluorescence image analysis workshop - GloBIAS and CNR Naples - 2025</a>
+<a href="https://globias-bioimageanalysts.github.io/Fluorescence_image_analysis_workshop-GloBIAS_CNR_Naples_2025/" target="_blank">🌐 Main Workshop Website</a>
 
-## 🔗 Quick Navigation
-- [📅 Course Schedule](#-course-schedule)
-- [🎯 Learning Objectives](#-learning-objectives) 
-- [📁 Day 1 Materials](Day1_Monday_July_7/) - Introduction, Plugins, ilastik
-- [📁 Day 2 Materials](Day2_Tuesday_July_8/) - AI Macros, Practical Session, Projects
-- [📚 Resources](Resources/) - Sample Images, Manuals, ImageJ Macro / Python Scripts, Advanced Workflows
-- [🔧 Installation & Setup](#-installation--setup-instructions)
-- [💡 Tips & Shortcuts](#-good-to-know)
-- [❓ Q&A Section](#questions--answers---hands-on)
+## � What Changed?
 
-<p align="center">
-  <a href="https://imagej.net/software/fiji/">
-    <img src="assets/logos/fiji-logo.png" alt="Fiji" height="100">
-  </a>
-  <a href="https://www.ilastik.org/">
-    <img src="assets/logos/ilastik-logo.png" alt="ilastik" height="100">
-  </a>
-  <a href="https://chat.openai.com/">
-    <img src="assets/logos/chatgpt-logo.webp" alt="ChatGPT" height="100">
-  </a>
-</p>
+- **Before**: Multiple folders and pages to navigate
+- **Now**: Everything consolidated into one beautiful single page
+- **Benefit**: Easier maintenance, better user experience, faster loading
+- **Archive**: All original structure preserved in `archive/` folder
 
+## 💼 For Maintainers
 
+- **Edit once**: All content is in `index.md`
+- **Styling**: Uses existing `assets/css/styles.css`
+- **Interactive**: FAQ and macros have expandable sections
+- **Navigation**: Smooth-scrolling anchor links
+- **Mobile**: Responsive design for all devices
 
-## 📅 Course Schedule
+## 🛠️ Development
 
-### Day 1 – Monday, 7th July 2025
-- **13:00–14:00**: Introduction to FIJI 📊 [Slides](Day1_Monday_July_7/01_Introduction_to_FIJI/Introduction%20to%20image%20analysis.pptx)
-- **14:00–15:00**: Showcase of FIJI plugins for bioimage analysis (with Ana Stojilkovic)
-- **15:30–16:30**: ilastik for interactive segmentation 📊 [Materials](Day1_Monday_July_7/03_Ilastik_Interactive_Segmentation/)
-
-### Day 2 – Tuesday, 8th July 2025
-- **09:30–10:30**: Automatisation of bioimage analysis with ImageJ macro powered by large language models 📊 [Slides](Day2_Tuesday_July_8/01_AI_Macro_Automation/2020418_ImageJMacro.pdf)
-- **11:00–12:00**: ImageJ macro practical session (with Ana Stojiljkovic) 📄 [Macros](Day2_Tuesday_July_8/02_Macro_Practical_Session/)
-- **15:30–17:00**: Project working groups (with Sebastian Gonzalez Tirado)
+The single-page site uses:
+- Jekyll/GitHub Pages compatible markdown
+- CSS variables from your existing `styles.css`
+- Vanilla JavaScript for interactivity
+- No external dependencies
 
 ---
 
-## 🎯 Learning Objectives  
-This course introduces Fiji (ImageJ) through hands-on sample image exercises, supported by beginner-friendly macros and structured learning goals:
-
-- Image loading and bit-depth conversion  
-- Intensity histograms and scaling effects  
-- Contrast adjustment and LUTs  
-- ROI tools and intensity measurements  
-- Spatial calibration and scale bars  
-- Automatic segmentation and particle analysis  
-- BONUS: Region masking and batch processing
-
----
-
-## 🔧 Installation & Setup Instructions
-
-### Pre-Workshop Requirements
-Install these tools before the workshop begins:
-
-#### 🔬 **Day 1 - Morning: Introduction to FIJI**
-- **Fiji (ImageJ)**: Download from [fiji.sc](https://fiji.sc/) 
-  - Choose your OS version (Windows/Mac/Linux)
-  - Extract and run `ImageJ-win64.exe` (Windows) or equivalent
-  - No additional setup required
-
-#### 🧩 **Day 1 - Afternoon: FIJI Plugins Showcase**
-- **Plugin Update Sites**: In Fiji, go to `Help → Update → Manage Update Sites`
-  - Enable common sites: `ImageJ-ITK`, `Bio-Formats`, `3D ImageJ Suite`
-  - Restart Fiji after updates
-
-#### 🤖 **Day 1 - Evening: ilastik Interactive Segmentation**
-- **ilastik**: Download from [ilastik.org](https://www.ilastik.org/download.html)
-  - Install the appropriate version for your OS
-  - Test launch before workshop day
-
-#### 🧠 **Day 2 - Morning: AI Macro Automation**
-- **ChatGPT Account**: Sign up at [chat.openai.com](https://chat.openai.com/)
-  - Free account sufficient for workshop
-- **Text Editor**: VS Code for macro editing
-
-#### 📊 **Day 2 - Afternoon: Macro Practical Session**
-- **Workshop Materials**: Clone/download this repository
+**Ready to explore?** 🚀 Visit the main website by opening `index.md` or accessing the GitHub Pages URL!
   - Sample images in `images/` folder
   - Macro files in `macros/` folder
 - **Fiji Setup**: 
