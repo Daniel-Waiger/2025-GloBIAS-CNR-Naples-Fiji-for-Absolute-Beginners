@@ -81,19 +81,135 @@ This course introduces Fiji (ImageJ) through hands-on sample image exercises, su
 
 ---
 
-## 🧾 ImageJ Macro Scripts Overview
+## 💬 ImageJ Macro Scripts & Code
 
-| Macro File | What It Does | Teaches | Link |
-|------------|-------------|---------|------|
-| `01_image_info_conversion.ijm` | Loads `M51`, shows metadata, converts to 8-bit with/without scaling | Bit-depth, profiles, scaling | [📄 Script](macros/01_image_info_conversion.ijm) |
-| `02_histogram_profiles.ijm` | Draws a line ROI, shows intensity profiles pre/post scaling | Line ROI, Plot Profile, scaling effects | [📄 Script](macros/02_histogram_profiles.ijm) |
-| `03_brightness_contrast.ijm` | Loads `gel_inv`, adjusts contrast, applies LUT | Display vs destructive changes | [📄 Script](macros/03_brightness_contrast.ijm) |
-| `04_channels_LUTs.ijm` | Opens RGB image, splits/merges channels, applies LUTs | Multichannel handling, color tools | [📄 Script](macros/04_channels_LUTs.ijm) |
-| `05_roi_measurement.ijm` | Opens `blobs`, draws ROIs, measures area/perimeter | ROI tools, Point tool, measurements | [📄 Script](macros/05_roi_measurement.ijm) |
-| `06_set_scale_bar.ijm` | Sets spatial scale using a known bar, adds and flattens scale bar | Calibration + overlays | [📄 Script](macros/06_set_scale_bar.ijm) |
-| `07_segmentation_particles.ijm` | Segments objects using threshold/watershed, analyzes particles | Segmentation, object counting | [📄 Script](macros/07_segmentation_particles.ijm) |
-| `08_masking_regions.ijm` | Creates and applies a binary mask to restrict analysis | Masking via image calculator | [📄 Script](macros/08_masking_regions.ijm) |
-| `09_ctcf_fluorescence.ijm` | Measures fluorescence, calculates corrected total cell fluorescence (CTCF) | Integrated density, background correction | [📄 Script](macros/09_ctcf_fluorescence.ijm) |
+### [📄 `01_image_info_conversion.ijm`](macros/01_image_info_conversion.ijm)
+**What it does**: Loads `M51`, shows metadata, converts to 8-bit with/without scaling  
+**Teaches**: Bit-depth, profiles, scaling
+
+```javascript
+run("M51 Galaxy (177K)");
+run("Show Info...");
+run("Duplicate...", "title=M51_Copy");
+setOption("ScaleConversions", true);
+run("8-bit");
+saveAs("Tiff", "M51_scaled.tif");
+run("Revert");
+setOption("ScaleConversions", false);
+run("8-bit");
+saveAs("Tiff", "M51_unscaled.tif");
+```
+
+### [📄 `02_histogram_profiles.ijm`](macros/02_histogram_profiles.ijm)
+**What it does**: Draws a line ROI, shows intensity profiles pre/post scaling  
+**Teaches**: Line ROI, Plot Profile, scaling effects
+
+```javascript
+run("M51 Galaxy (177K)");
+makeLine(90, 60, 160, 60);
+run("Plot Profile");
+setOption("ScaleConversions", true);
+run("8-bit");
+run("Plot Profile");
+```
+
+### [📄 `03_brightness_contrast.ijm`](macros/03_brightness_contrast.ijm)
+**What it does**: Loads `gel_inv`, adjusts contrast, applies LUT  
+**Teaches**: Display vs destructive changes
+
+```javascript
+run("Gel (105K)");
+run("Enhance Contrast", "saturated=0.35");
+setMinAndMax(80, 200);
+run("Apply LUT");
+saveAs("Tiff", "gel_adjusted.tif");
+```
+
+### [📄 `04_channels_LUTs.ijm`](macros/04_channels_LUTs.ijm)
+**What it does**: Opens RGB image, splits/merges channels, applies LUTs  
+**Teaches**: Multichannel handling, color tools
+
+```javascript
+run("Fluorescent Cells (400K)");
+run("Split Channels");
+run("Merge Channels...", "c1=red c2=green c3=blue create");
+run("Channels Tool...");
+run("Add Calibration Bar", "location=[Lower Right]");
+```
+
+### [📄 `05_roi_measurement.ijm`](macros/05_roi_measurement.ijm)
+**What it does**: Opens `blobs`, draws ROIs, measures area/perimeter  
+**Teaches**: ROI tools, Point tool, measurements
+
+```javascript
+run("Blobs (25K)");
+makeRectangle(30, 40, 40, 40);
+roiManager("Add");
+makeOval(100, 100, 35, 35);
+roiManager("Add");
+run("Set Measurements...", "area mean perimeter redirect=None decimal=3");
+roiManager("Measure");
+saveAs("Results", "blobs_results.csv");
+```
+
+### [📄 `06_set_scale_bar.ijm`](macros/06_set_scale_bar.ijm)
+**What it does**: Sets spatial scale using a known bar, adds and flattens scale bar  
+**Teaches**: Calibration + overlays
+
+```javascript
+run("Cell Colony (31K)");
+makeLine(25, 230, 125, 230);
+run("Set Scale...", "distance=100 known=100 unit=um");
+run("Add Scale Bar", "width=100 height=12 font=18 color=White location=[Lower Right] bold overlay");
+run("Flatten");
+saveAs("Tiff", "Cell_Colony_scaled.tif");
+```
+
+### [📄 `07_segmentation_particles.ijm`](macros/07_segmentation_particles.ijm)
+**What it does**: Segments objects using threshold/watershed, analyzes particles  
+**Teaches**: Segmentation, object counting
+
+```javascript
+run("Fluorescent Cells (400K)");
+run("Split Channels");
+selectWindow("RGB_Cell (green)");
+run("8-bit");
+setAutoThreshold("Otsu");
+run("Convert to Mask");
+run("Watershed");
+run("Analyze Particles...", "size=50-Infinity circularity=0.20-1.00 display add");
+```
+
+### [📄 `08_masking_regions.ijm`](macros/08_masking_regions.ijm)
+**What it does**: Creates and applies a binary mask to restrict analysis  
+**Teaches**: Masking via image calculator
+
+```javascript
+run("Fluorescent Cells (400K)");
+run("Split Channels");
+selectWindow("RGB_Cell (green)");
+run("8-bit");
+setAutoThreshold("Otsu");
+run("Convert to Mask");
+run("Create Selection");
+run("Duplicate...", "title=Mask");
+imageCalculator("AND create", "RGB_Cell (green)", "Mask");
+selectWindow("Result of RGB_Cell (green)");
+run("Analyze Particles...", "size=50-Infinity display add");
+```
+
+### [📄 `09_ctcf_fluorescence.ijm`](macros/09_ctcf_fluorescence.ijm)
+**What it does**: Measures fluorescence, calculates corrected total cell fluorescence (CTCF)  
+**Teaches**: Integrated density, background correction
+
+```javascript
+run("Blobs (25K)");
+makeOval(100, 100, 40, 40);
+run("Set Measurements...", "area mean min integrated redirect=None decimal=3");
+run("Measure");
+makeRectangle(10, 10, 30, 30);
+run("Measure");
+```
 
 ---
 
@@ -119,116 +235,6 @@ This course introduces Fiji (ImageJ) through hands-on sample image exercises, su
 
 ---
 
-## 💬 Macro Code Blocks
-
-### `01_image_info_conversion.ijm`
-```javascript
-run("M51 Galaxy (177K)");
-run("Show Info...");
-run("Duplicate...", "title=M51_Copy");
-setOption("ScaleConversions", true);
-run("8-bit");
-saveAs("Tiff", "M51_scaled.tif");
-run("Revert");
-setOption("ScaleConversions", false);
-run("8-bit");
-saveAs("Tiff", "M51_unscaled.tif");
-```
-
-### `02_histogram_profiles.ijm`
-```javascript
-run("M51 Galaxy (177K)");
-makeLine(90, 60, 160, 60);
-run("Plot Profile");
-setOption("ScaleConversions", true);
-run("8-bit");
-run("Plot Profile");
-
-```
-
-### `03_brightness_contrast.ijm`
-```javascript
-run("Gel (105K)");
-run("Enhance Contrast", "saturated=0.35");
-setMinAndMax(80, 200);
-run("Apply LUT");
-saveAs("Tiff", "gel_adjusted.tif");
-
-```
-
-### `04_channels_LUTs.ijm`
-```javascript
-run("Fluorescent Cells (400K)");
-run("Split Channels");
-run("Merge Channels...", "c1=red c2=green c3=blue create");
-run("Channels Tool...");
-run("Add Calibration Bar", "location=[Lower Right]");
-
-```
-
-### `05_roi_measurement.ijm`
-```javascript
-run("Blobs (25K)");
-makeRectangle(30, 40, 40, 40);
-roiManager("Add");
-makeOval(100, 100, 35, 35);
-roiManager("Add");
-run("Set Measurements...", "area mean perimeter redirect=None decimal=3");
-roiManager("Measure");
-saveAs("Results", "blobs_results.csv");
-
-```
-
-### `06_set_scale_bar.ijm`
-```javascript
-run("Cell Colony (31K)");
-makeLine(25, 230, 125, 230);
-run("Set Scale...", "distance=100 known=100 unit=um");
-run("Add Scale Bar", "width=100 height=12 font=18 color=White location=[Lower Right] bold overlay");
-run("Flatten");
-saveAs("Tiff", "Cell_Colony_scaled.tif");
-
-```
-
-### `07_segmentation_particles.ijm`
-```javascript
-run("Fluorescent Cells (400K)");
-run("Split Channels");
-selectWindow("RGB_Cell (green)");
-run("8-bit");
-setAutoThreshold("Otsu");
-run("Convert to Mask");
-run("Watershed");
-run("Analyze Particles...", "size=50-Infinity circularity=0.20-1.00 display add");
-
-```
-
-### `08_masking_regions.ijm`
-```javascript
-run("Fluorescent Cells (400K)");
-run("Split Channels");
-selectWindow("RGB_Cell (green)");
-run("8-bit");
-setAutoThreshold("Otsu");
-run("Convert to Mask");
-run("Create Selection");
-run("Duplicate...", "title=Mask");
-imageCalculator("AND create", "RGB_Cell (green)", "Mask");
-selectWindow("Result of RGB_Cell (green)");
-run("Analyze Particles...", "size=50-Infinity display add");
-
-```
-
-### `09_ctcf_fluorescence.ijm`
-```javascript
-run("Blobs (25K)");
-makeOval(100, 100, 40, 40);
-run("Set Measurements...", "area mean min integrated redirect=None decimal=3");
-run("Measure");
-makeRectangle(10, 10, 30, 30);
-run("Measure");
-
-```
 # Questions & Answers - Hands-On
 
 ## 1. Loading and Characterizing an Image
