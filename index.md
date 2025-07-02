@@ -692,7 +692,7 @@ run("Measure");</code></pre>
 </section>
 
 <!-- GitHub Button -->
-<a href="https://github.com/GloBIAS-bioimage-analysts/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners" target="_blank" class="github-btn">📄 Show on GitHub</a>
+<a href="https://github.com/daniel-waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners" target="_blank" class="github-btn">📄 Show on GitHub</a>
 
 <!-- JavaScript -->
 <script>
