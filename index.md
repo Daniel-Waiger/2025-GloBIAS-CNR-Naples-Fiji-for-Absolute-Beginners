@@ -653,7 +653,6 @@ html {
       <div class="session-title">ImageJ macro practical session</div>
       <div class="session-instructor">with Daniel Waiger and Ana Stojiljković • 📊 <a href="slides/Day2/2020418_ImageJMacro.pdf">Programming Guide</a> • 📄 <a href="macros/">Macros Available</a></div>
     </div>
-    </div>
     <div class="session">
       <div class="session-time">15:30–17:00</div>
       <div class="session-title">Project working groups</div>
