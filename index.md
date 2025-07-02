@@ -608,12 +608,10 @@ html {
     <li><a href="#schedule">📅 Schedule</a></li>
     <li><a href="#objectives">🎯 Objectives</a></li>
     <li><a href="#installation">🔧 Setup</a></li>
-    <li><a href="#features">✨ Features</a></li>
     <li><a href="#materials">📚 Materials</a></li>
     <li><a href="#macros">⚡ Macros</a></li>
     <li><a href="#tips">💡 Tips</a></li>
     <li><a href="#faq">❓ FAQ</a></li>
-    <li><a href="#contact">📞 Contact</a></li>
   </ul>
   <button class="theme-toggle" id="themeToggle">
     <span id="themeIcon">🌙</span>
@@ -753,41 +751,6 @@ html {
       <h4>📁 Workshop Materials</h4>
       <p>Clone or download this repository to access all sample images, macros, and training materials.</p>
     </div>
-  </div>
-</div>
-
-## ✨ Workshop Features
-
-<div id="features" class="features-grid">
-  <div class="feature-card">
-    <div class="feature-icon">🧬</div>
-    <h3>Bioimage Analysis</h3>
-    <p>Comprehensive training in fluorescence microscopy image analysis using industry-standard tools</p>
-  </div>
-  <div class="feature-card">
-    <div class="feature-icon">🤖</div>
-    <h3>AI-Enhanced</h3>
-    <p>Learn to use ChatGPT and other AI tools to accelerate macro development and troubleshooting</p>
-  </div>
-  <div class="feature-card">
-    <div class="feature-icon">🖐️</div>
-    <h3>Hands-on Training</h3>
-    <p>Interactive sessions with real biological images and practical exercises</p>
-  </div>
-  <div class="feature-card">
-    <div class="feature-icon">📊</div>
-    <h3>Interactive Segmentation</h3>
-    <p>Master ilastik's machine learning approach to pixel classification and object tracking</p>
-  </div>
-  <div class="feature-card">
-    <div class="feature-icon">⚡</div>
-    <h3>Macro Programming</h3>
-    <p>Build automated workflows with ImageJ macros for reproducible analysis</p>
-  </div>
-  <div class="feature-card">
-    <div class="feature-icon">👥</div>
-    <h3>Expert Guidance</h3>
-    <p>Learn from experienced trainers with diverse bioimage analysis backgrounds</p>
   </div>
 </div>
 
