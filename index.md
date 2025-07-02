@@ -696,12 +696,13 @@ html {
     <div class="session">
       <div class="session-time">09:30–10:30</div>
       <div class="session-title">Automatisation of bioimage analysis with ImageJ macro powered by large language models</div>
-      <div class="session-instructor">📊 <a href="slides/Day2_Fiji_programming/2020418_ImageJMacro.pdf">Slides Available</a></div>
+      <div class="session-instructor">📊 <a href="slides/Day2_Fiji_programming/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx">Slides Available</a></div>
     </div>
     <div class="session">
       <div class="session-time">11:00–12:00</div>
       <div class="session-title">ImageJ macro practical session</div>
-      <div class="session-instructor">with Ana Stojiljković • 📄 <a href="macros/">Macros Available</a></div>
+      <div class="session-instructor">with Daniel Waiger and Ana Stojiljković • 📊 <a href="slides/Day2_Fiji_programming/2020418_ImageJMacro.pdf">Programming Guide</a> • 📄 <a href="macros/">Macros Available</a></div>
+    </div>
     </div>
     <div class="session">
       <div class="session-time">15:30–17:00</div>
@@ -715,7 +716,7 @@ html {
 
 <div id="objectives" class="objectives-grid">
   <div class="objective-card">
-    <h4>🖼️ Image Fundamentals</h4>
+    <h4>🖼️ ImageJ/Fiji Fundamentals</h4>
     <p>Master image loading, bit-depth conversion, and understand how different formats affect analysis</p>
   </div>
   <div class="objective-card">
@@ -766,7 +767,7 @@ html {
     <div class="step-number">2</div>
     <div class="step-content">
       <h4>🧩 Plugin Update Sites</h4>
-      <p>In Fiji: Help → Update → Manage Update Sites. Enable: ImageJ-ITK, Bio-Formats, 3D ImageJ Suite. Restart after updates.</p>
+      <p>In Fiji: Help → Update → Manage Update Sites. Enable: CLIJ, StarDist, CSBDeep,TrackMate, PT-BIOP. Restart after updates.</p>
     </div>
   </div>
 
@@ -838,29 +839,6 @@ html {
   </div>
 </div>
 
-## 👥 Meet Your Trainers
-
-<div id="trainers" class="trainers-section">
-  <h2>Expert Trainers</h2>
-  <div class="trainers-grid">
-    <div class="trainer-card">
-      <h3>Daniel Waiger</h3>
-      <p>Bioimage Analysis Specialist</p>
-    </div>
-    <div class="trainer-card">
-      <h3>Rocco D'Antuono</h3>
-      <p>Advanced Microscopy Expert</p>
-    </div>
-    <div class="trainer-card">
-      <h3>Ana Stojiljković</h3>
-      <p>FIJI Plugin Development</p>
-    </div>
-    <div class="trainer-card">
-      <h3>Sebastian Gonzalez Tirado</h3>
-      <p>Project Workflow Specialist</p>
-    </div>
-  </div>
-</div>
 
 ## 💡 Good to Know - Tips & Shortcuts
 
@@ -869,8 +847,8 @@ html {
     <h4>⌨️ Essential Shortcuts</h4>
     <ul>
       <li><code>Ctrl+O</code> - Open Image</li>
-      <li><code>Ctrl+Shift+C</code> - Channels Tool</li>
-      <li><code>Ctrl+Shift+T</code> - Threshold</li>
+      <li><code>Ctrl+Shift+C</code> - Brightness and Contrast Plugin</li>
+      <li><code>Ctrl+Shift+T</code> - Threshold Plugin</li>
       <li><code>M</code> - Measure</li>
     </ul>
   </div>
@@ -952,7 +930,9 @@ html {
       <span>+</span>
     </button>
     <div class="faq-answer">
-      <p>Yes! Join the GloBIAS community for continued support. We also encourage questions via GitHub issues on this repository.</p>
+      <p>
+        Yes! You can post questions on <a href="https://forum.image.sc/" target="_blank">image.sc</a>—the global forum for bioimage analysis. We encourage you to ask questions there or via GitHub issues on this repository.
+      </p>
     </div>
   </div>
 </div>
