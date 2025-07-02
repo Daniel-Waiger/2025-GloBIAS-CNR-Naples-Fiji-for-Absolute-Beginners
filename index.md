@@ -603,23 +603,45 @@ html {
 </div>
 
 <!-- Quick Navigation -->
-<section>
-  <h2>🚀 Quick Navigation</h2>
+<section id="navigation">
+  <h2>🚀 Workshop Materials Overview</h2>
   <div class="navigation-cards">
     <div class="nav-card">
-      <h3>📅 Day 1 Materials</h3>
-      <p>Introduction to FIJI, Plugin Showcase, ilastik Interactive Segmentation</p>
-      <a href="{{ '/Day1_Monday_July_7/' | relative_url }}" class="btn">Explore Day 1</a>
+      <h3>📅 Day 1: Introduction to FIJI</h3>
+      <p>Learn the fundamentals of bioimage analysis with FIJI and explore interactive segmentation with ilastik</p>
+      <div style="text-align: left; margin-top: 1rem;">
+        <strong>Sessions:</strong>
+        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+          <li>Introduction to FIJI (13:00-14:00)</li>
+          <li>Plugin Showcase (14:00-15:00)</li>
+          <li>ilastik Interactive Segmentation (15:30-16:30)</li>
+        </ul>
+      </div>
     </div>
     <div class="nav-card">
-      <h3>📅 Day 2 Materials</h3>
-      <p>AI-Enhanced Macros, Practical Sessions, Project Working Groups</p>
-      <a href="{{ '/Day2_Tuesday_July_8/' | relative_url }}" class="btn">Explore Day 2</a>
+      <h3>📅 Day 2: AI-Enhanced Macros</h3>
+      <p>Automate your analysis workflows with ImageJ macros powered by AI and work on practical projects</p>
+      <div style="text-align: left; margin-top: 1rem;">
+        <strong>Sessions:</strong>
+        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+          <li>AI Macro Automation (09:30-10:30)</li>
+          <li>Practical Session (11:00-12:00)</li>
+          <li>Project Working Groups (15:30-17:00)</li>
+        </ul>
+      </div>
     </div>
     <div class="nav-card">
-      <h3>📚 Resources</h3>
-      <p>Sample Images, Training Manuals, Python Scripts, Advanced Workflows</p>
-      <a href="{{ '/Resources/' | relative_url }}" class="btn">Browse Resources</a>
+      <h3>📚 Complete Resource Library</h3>
+      <p>Access all sample images, training manuals, macro scripts, and advanced workflows in one place</p>
+      <div style="text-align: left; margin-top: 1rem;">
+        <strong>Includes:</strong>
+        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+          <li>20+ Sample Images</li>
+          <li>9 ImageJ Macro Scripts</li>
+          <li>Training Manuals & Slides</li>
+          <li>Python Scripts & Advanced Workflows</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -955,16 +977,255 @@ html {
   <strong>Location:</strong> CNR Naples, Italy</p>
 </div>
 
+## 📚 Workshop Materials & Downloads
+
+<div id="materials" class="installation-steps">
+  <h3>Complete Resource Library</h3>
+  <p>All workshop materials are available directly from this repository. Download or browse as needed:</p>
+
+  <div class="step">
+    <div class="step-number">📊</div>
+    <div class="step-content">
+      <h4>Presentation Slides</h4>
+      <ul>
+        <li><a href="archive/Day1_Monday_July_7/01_Introduction_to_FIJI/Introduction%20to%20image%20analysis.pptx">Introduction to Image Analysis</a> (Day 1)</li>
+        <li><a href="archive/Day2_Tuesday_July_8/01_AI_Macro_Automation/2020418_ImageJMacro.pdf">AI Macro Automation</a> (Day 2)</li>
+        <li><a href="archive/Day1_Monday_July_7/03_Ilastik_Interactive_Segmentation/Ilastik%20–%20The%20Interactive%20Learning%20And%20Segmentation%20Toolkit.pptx">ilastik Interactive Segmentation</a></li>
+        <li><a href="slides/chatGPT/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx">ChatGPT for Image Analysis</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">🖼️</div>
+    <div class="step-content">
+      <h4>Sample Images</h4>
+      <p>Practice with our curated collection of biological images:</p>
+      <ul>
+        <li><code>1703.tif</code> - Multi-channel fluorescence</li>
+        <li><code>blobs.tif</code> & <code>blobs_noise.tif</code> - Segmentation practice</li>
+        <li><code>cells_ActinDNA.tif</code> - Cellular structures</li>
+        <li><code>FluorescentCells.tif</code> - Cell analysis</li>
+        <li><code>H&E.tif</code> - Histology sample</li>
+        <li><code>RGB_cell.tif</code> - Color image processing</li>
+        <li><code>m51.tif</code> - Advanced analysis</li>
+        <li><code>gel_inv.tif</code> - Gel electrophoresis</li>
+      </ul>
+      <p><strong>Location:</strong> <code>images/</code> folder in repository</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">📖</div>
+    <div class="step-content">
+      <h4>Training Manuals</h4>
+      <ul>
+        <li><a href="manuals/FIJI%20training.pdf">FIJI Training Manual</a> - Complete guide (PDF)</li>
+        <li><a href="manuals/FIJI%20training.docx">FIJI Training Manual</a> - Editable version (DOCX)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">🐍</div>
+    <div class="step-content">
+      <h4>Python Scripts</h4>
+      <p>Advanced analysis tools for Python users:</p>
+      <ul>
+        <li><a href="python%20library/Script%201%20-%20Bit%20Depth%20Examples.py">Bit Depth Examples</a></li>
+        <li><a href="python%20library/Script%202%20-%20Overlay%20on%20Original%20Image.py">Image Overlay Script</a></li>
+        <li><a href="python%20library/Script%202%20-%20Overlay%20on%20Original%20Image%20-%20all%20bit%20depths.py">Multi-bit Depth Overlay</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">🔬</div>
+    <div class="step-content">
+      <h4>Advanced Workflows</h4>
+      <ul>
+        <li><a href="archive/Day1_Monday_July_7/03_Ilastik_Interactive_Segmentation/mitocheck/">Mitocheck Dataset</a> - Cell tracking examples</li>
+        <li><a href="slides/chatGPT/FDA_vs_PI_Scatter_Plot_Combined.html">FDA vs PI Analysis</a> - Interactive visualization</li>
+        <li><a href="slides/chatGPT/Tuna_Analysis_Protocol_Modern.html">Tuna Analysis Protocol</a> - Complete workflow</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+## ⚡ ImageJ Macro Library
+
+<div id="macros" class="faq-section">
+  <h3>Complete Macro Collection</h3>
+  <p>Ready-to-use ImageJ macros for common bioimage analysis tasks:</p>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      01_image_info_conversion.ijm - Image Basics
+      <span>+</span>
+    </button>
+    <div class="faq-answer">
+      <p><strong>Purpose:</strong> Learn image properties, bit-depth conversion, and basic image manipulation</p>
+      <p><strong>Key Functions:</strong></p>
+      <ul>
+        <li>Display image dimensions and properties</li>
+        <li>Convert between 8-bit, 16-bit, and 32-bit formats</li>
+        <li>Understand how bit-depth affects analysis</li>
+      </ul>
+      <a href="macros/01_image_info_conversion.ijm" class="btn" style="margin-top: 1rem;">Download Macro</a>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      02_histogram_profiles.ijm - Intensity Analysis
+      <span>+</span>
+    </button>
+    <div class="faq-answer">
+      <p><strong>Purpose:</strong> Analyze intensity distributions and create profile plots</p>
+      <p><strong>Key Functions:</strong></p>
+      <ul>
+        <li>Generate intensity histograms</li>
+        <li>Create line profile plots</li>
+        <li>Understand intensity scaling effects</li>
+      </ul>
+      <a href="macros/02_histogram_profiles.ijm" class="btn" style="margin-top: 1rem;">Download Macro</a>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      03_brightness_contrast.ijm - Image Enhancement
+      <span>+</span>
+    </button>
+    <div class="faq-answer">
+      <p><strong>Purpose:</strong> Master brightness/contrast adjustments and visualization</p>
+      <p><strong>Key Functions:</strong></p>
+      <ul>
+        <li>Adjust display range without changing data</li>
+        <li>Apply auto-contrast and normalization</li>
+        <li>Understand display vs. data modifications</li>
+      </ul>
+      <a href="macros/03_brightness_contrast.ijm" class="btn" style="margin-top: 1rem;">Download Macro</a>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      04_channels_LUTs.ijm - Multi-channel Imaging
+      <span>+</span>
+    </button>
+    <div class="faq-answer">
+      <p><strong>Purpose:</strong> Handle multi-channel images and apply appropriate color schemes</p>
+      <p><strong>Key Functions:</strong></p>
+      <ul>
+        <li>Split and merge color channels</li>
+        <li>Apply lookup tables (LUTs) for visualization</li>
+        <li>Create composite images</li>
+      </ul>
+      <a href="macros/04_channels_LUTs.ijm" class="btn" style="margin-top: 1rem;">Download Macro</a>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      05_roi_measurement.ijm - Region Analysis
+      <span>+</span>
+    </button>
+    <div class="faq-answer">
+      <p><strong>Purpose:</strong> Create regions of interest and perform quantitative measurements</p>
+      <p><strong>Key Functions:</strong></p>
+      <ul>
+        <li>Draw and manage ROIs (circles, rectangles, polygons)</li>
+        <li>Measure area, intensity, and other parameters</li>
+        <li>Save and load ROI sets</li>
+      </ul>
+      <a href="macros/05_roi_measurement.ijm" class="btn" style="margin-top: 1rem;">Download Macro</a>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      06_set_scale_bar.ijm - Spatial Calibration
+      <span>+</span>
+    </button>
+    <div class="faq-answer">
+      <p><strong>Purpose:</strong> Set proper spatial calibration and add professional scale bars</p>
+      <p><strong>Key Functions:</strong></p>
+      <ul>
+        <li>Set pixel size and units (μm, nm, etc.)</li>
+        <li>Add calibrated scale bars</li>
+        <li>Convert measurements to real-world units</li>
+      </ul>
+      <a href="macros/06_set_scale_bar.ijm" class="btn" style="margin-top: 1rem;">Download Macro</a>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      07_segmentation_particles.ijm - Automated Analysis
+      <span>+</span>
+    </button>
+    <div class="faq-answer">
+      <p><strong>Purpose:</strong> Perform automatic segmentation and particle analysis</p>
+      <p><strong>Key Functions:</strong></p>
+      <ul>
+        <li>Threshold images for segmentation</li>
+        <li>Analyze particles (count, size, shape)</li>
+        <li>Filter results by size and circularity</li>
+      </ul>
+      <a href="macros/07_segmentation_particles.ijm" class="btn" style="margin-top: 1rem;">Download Macro</a>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      08_masking_regions.ijm - Advanced Masking
+      <span>+</span>
+    </button>
+    <div class="faq-answer">
+      <p><strong>Purpose:</strong> Create and apply masks for selective analysis</p>
+      <p><strong>Key Functions:</strong></p>
+      <ul>
+        <li>Create binary masks from thresholds</li>
+        <li>Apply masks to limit analysis regions</li>
+        <li>Combine multiple masks with boolean operations</li>
+      </ul>
+      <a href="macros/08_masking_regions.ijm" class="btn" style="margin-top: 1rem;">Download Macro</a>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      09_ctcf_fluorescence.ijm - Fluorescence Quantification
+      <span>+</span>
+    </button>
+    <div class="faq-answer">
+      <p><strong>Purpose:</strong> Calculate Corrected Total Cell Fluorescence (CTCF) for accurate quantification</p>
+      <p><strong>Key Functions:</strong></p>
+      <ul>
+        <li>Measure integrated density and background</li>
+        <li>Calculate CTCF = Integrated Density - (Area × Mean Background)</li>
+        <li>Export results for statistical analysis</li>
+      </ul>
+      <a href="macros/09_ctcf_fluorescence.ijm" class="btn" style="margin-top: 1rem;">Download Macro</a>
+    </div>
+  </div>
+</div>
+
 ---
 
 <div style="text-align: center; margin: 3rem 0; padding: 2rem; background: var(--navbar-bg); border-radius: 15px;">
   <h2>🚀 Ready to Begin?</h2>
-  <p style="font-size: 1.1rem; margin: 1rem 0;">Start your bioimage analysis journey with our comprehensive materials</p>
+  <p style="font-size: 1.1rem; margin: 1rem 0;">Everything you need is right here on this page!</p>
   <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; flex-wrap: wrap;">
-    <a href="{{ '/Day1_Monday_July_7/' | relative_url }}" class="btn">📅 Day 1 Materials</a>
-    <a href="{{ '/Day2_Tuesday_July_8/' | relative_url }}" class="btn">📅 Day 2 Materials</a>
-    <a href="{{ '/Resources/' | relative_url }}" class="btn">📚 Browse Resources</a>
+    <a href="#schedule" class="btn">📅 View Schedule</a>
+    <a href="#materials" class="btn">📚 Download Materials</a>
+    <a href="#macros" class="btn">⚡ Get Macros</a>
+    <a href="#installation" class="btn">🔧 Setup Guide</a>
   </div>
+  <p style="margin-top: 2rem; opacity: 0.8;">
+    <strong>Note:</strong> All original organized folders have been moved to the <code>archive/</code> directory for reference.
+  </p>
 </div>
 
 <!-- Back to Top Button -->
