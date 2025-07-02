@@ -12,6 +12,10 @@ body {
 :root {
     --background-color: #1a1a28;
     --text-color: #a18aff;
+    --navbar-bg: #2c2c3a;
+    --navbar-text: #a18aff;
+    --navbar-hover-bg: #444465;
+    --navbar-hover-text: #ffffff;
     --button-bg: #3a3a57;
     --button-text: #d4cbff;
     --button-hover-bg: #5a5a7e;
@@ -25,17 +29,26 @@ body {
 :root[data-theme="light"] {
     --background-color: #fdfcf6;
     --text-color: #5c4033;
+    --navbar-bg: #f5f5f0;
+    --navbar-text: #5c4033;
+    --navbar-hover-bg: #ebdfd1;
+    --navbar-hover-text: #3b261b;
     --button-bg: #d9c3b1;
     --button-text: #3b261b;
     --button-hover-bg: #c4a995;
     --footer-bg: #f5f5f0;
     --footer-text: #5c4033;
     --section-border-color: #ddd;
+    --link-color: #5c4033;
 }
 
 :root[data-theme="dark"] {
     --background-color: #1a1a28;
     --text-color: #a18aff;
+    --navbar-bg: #2c2c3a;
+    --navbar-text: #a18aff;
+    --navbar-hover-bg: #444465;
+    --navbar-hover-text: #ffffff;
     --button-bg: #3a3a57;
     --button-text: #d4cbff;
     --button-hover-bg: #5a5a7e;
@@ -50,6 +63,69 @@ body {
     --icon-size-mobile: min(4vw, 2rem);
 }
 
+/* Sticky Top Navigation - Support for index.md nav */
+.quick-nav {
+    position: sticky;
+    top: 0;
+    background: var(--navbar-bg);
+    padding: 1rem;
+    border-radius: 0 0 15px 15px;
+    margin: 0 -2rem 2rem -2rem;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.quick-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.quick-nav a {
+    color: var(--navbar-text);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.quick-nav a:hover {
+    background: var(--navbar-hover-bg);
+    color: var(--navbar-hover-text);
+    transform: translateY(-2px);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 1001;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.theme-toggle:hover {
+    background: var(--button-hover-bg);
+    transform: scale(1.1);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
 /* Layout */
 main {
     padding: 20px;
@@ -61,6 +137,27 @@ main {
 @media (max-width: 768px) {
     main {
         padding: 15px;
+    }
+    
+    .quick-nav {
+        margin: 0 -1rem 2rem -1rem;
+    }
+    
+    .quick-nav ul {
+        gap: 1rem;
+    }
+    
+    .quick-nav a {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        top: 15px;
+        right: 15px;
     }
 }
 
@@ -86,6 +183,27 @@ section {
 }
 
 /* Buttons & Links */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--link-color);
+    color: var(--background-color);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background: var(--text-color);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
 section li a {
     display: flex;
     align-items: center;
