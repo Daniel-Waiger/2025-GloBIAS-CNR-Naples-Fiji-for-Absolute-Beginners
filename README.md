@@ -7,19 +7,19 @@
 **Trainers**: Daniel Waiger | Rocco D'Antuono | Ana Stojilijkovic | Sebastian Gonzalez Tirado  
 
 ### 📁 Session Structure
-- **[Day 1 Materials](slides/Day1/)** - Introduction, Plugin Showcase, ilastik
-- **[Day 2 Materials](slides/Day2/)** - AI Automation, Practical Session, Projects
-- **[Sample Images](images/)** - Practice datasets for exercises
-- **[Macro Scripts](macros/)** - Ready-to-use ImageJ macros
-- **[Training Manuals](manuals/)** - Reference documentation
+- **[Day 1 Materials](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/slides/Day1){:target="_blank"}** - Introduction, Plugin Showcase, ilastik
+- **[Day 2 Materials](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/slides/Day2){:target="_blank"}** - AI Automation, Practical Session, Projects
+- **[Sample Images](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/images){:target="_blank"}** - Practice datasets for exercises
+- **[Macro Scripts](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/macros){:target="_blank"}** - Ready-to-use ImageJ macros
+- **[Training Manuals](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/manuals){:target="_blank"}** - Reference documentation
 
 ### 📊 Direct Links to Key Materials
 - [Introduction Slides](slides/Day1/01_Introduction_to_Image_Analysis.pptx) - Day 1 Opening
 - [ilastik Tutorial](slides/Day1/Ilastik – The Interactive Learning And Segmentation Toolkit.pptx) - Interactive Segmentation
 - [ChatGPT Enhancement Materials](slides/Day2/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx) - Day 2 Morning - Using AI Tools for Image Analysis
 - [AI Macro Programming](slides/Day2/2020418_ImageJMacro.pdf) - A Brief Overview on ImageJ Macro (With Ana Stojilijkovic)
-- [Interactive Workflows](slides/Day2/) - Advanced analysis examples
-- [All Macro Scripts](macros/) - Complete macro library
+- [Interactive Workflows](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/slides/Day2){:target="_blank"} - Advanced analysis examples
+- [All Macro Scripts](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/macros){:target="_blank"} - Complete macro library
 
 **Event**: GloBIAS & CNR Naples 2025  
 **Dates**: July 7-11, 2025
@@ -29,11 +29,11 @@
 ## 🔗 Quick Navigation
 - [📅 Course Schedule](#-course-schedule)
 - [🎯 Learning Objectives](#-learning-objectives) 
-- [📁 Day 1 Materials](slides/Day1/) - Introduction, Plugins, ilastik
-- [📁 Day 2 Materials](slides/Day2/) - AI Macros, Practical Session, Projects
-- [📚 Sample Images](images/) - Practice datasets for exercises
-- [⚡ Macro Scripts](macros/) - Ready-to-use ImageJ macros
-- [📖 Training Manuals](manuals/) - Reference documentation
+- [📁 Day 1 Materials](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/slides/Day1){:target="_blank"} - Introduction, Plugins, ilastik
+- [📁 Day 2 Materials](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/slides/Day2){:target="_blank"} - AI Macros, Practical Session, Projects
+- [📚 Sample Images](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/images){:target="_blank"} - Practice datasets for exercises
+- [⚡ Macro Scripts](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/macros){:target="_blank"} - Ready-to-use ImageJ macros
+- [📖 Training Manuals](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/manuals){:target="_blank"} - Reference documentation
 - [🔧 Setup Instructions](#-setup-instructions)
 - [💡 Tips & Shortcuts](#-good-to-know)
 - [❓ Q&A Section](#questions--answers---hands-on)
@@ -59,11 +59,11 @@
 ### Day 1 – Monday, 7th July 2025
 - **13:00–14:00**: Introduction to FIJI 📊 [Slides](slides/Day1/01_Introduction_to_Image_Analysis.pptx)
 - **14:00–15:00**: Showcase of FIJI plugins for bioimage analysis (with Ana Stojilkovic)
-- **15:30–16:30**: ilastik for interactive segmentation 📊 [Materials](slides/Day1/)
+- **15:30–16:30**: ilastik for interactive segmentation 📊 [Materials](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/slides/Day1){:target="_blank"}
 
 ### Day 2 – Tuesday, 8th July 2025
 - **09:30–10:30**: Automatisation of bioimage analysis with ImageJ macro powered by large language models 📊 [Slides](slides/Day2/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx)
-- **11:00–12:00**: ImageJ macro practical session (with Ana Stojiljkovic) 📄 [Macros](macros/) • 📊 [Programming Guide](slides/Day2/2020418_ImageJMacro.pdf)
+- **11:00–12:00**: ImageJ macro practical session (with Ana Stojiljkovic) 📄 [Macros](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/macros){:target="_blank"} • 📊 [Programming Guide](slides/Day2/2020418_ImageJMacro.pdf)
 - **15:30–17:00**: Project working groups (with Sebastian Gonzalez Tirado)
 
 ---
@@ -356,12 +356,12 @@ Brighter signals may result from larger or more compact cells. CTCF normalizatio
 ## 📚 Workshop Materials & Resources
 
 ### 📁 Course Structure
-- **[Day 1 Materials](slides/Day1/)** - Introduction, Plugin Showcase, ilastik
-- **[Day 2 Materials](slides/Day2/)** - AI Automation, Practical Session, Projects
-- **[Sample Images](images/)** - Practice datasets for exercises
-- **[Macro Scripts](macros/)** - Ready-to-use ImageJ macros
-- **[Training Manuals](manuals/)** - Reference documentation
-- **[Python Scripts](python%20library/)** - Advanced analysis tools
+- **[Day 1 Materials](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/slides/Day1){:target="_blank"}** - Introduction, Plugin Showcase, ilastik
+- **[Day 2 Materials](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/slides/Day2){:target="_blank"}** - AI Automation, Practical Session, Projects
+- **[Sample Images](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/images){:target="_blank"}** - Practice datasets for exercises
+- **[Macro Scripts](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/macros){:target="_blank"}** - Ready-to-use ImageJ macros
+- **[Training Manuals](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/manuals){:target="_blank"}** - Reference documentation
+- **[Python Scripts](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/python%20library){:target="_blank"}** - Advanced analysis tools
 
 ### 📊 Direct Links to Key Materials
 - [Introduction Slides](slides/Day1/01_Introduction_to_Image_Analysis.pptx) - Day 1 Opening
