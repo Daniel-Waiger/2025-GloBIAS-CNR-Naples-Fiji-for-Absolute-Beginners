@@ -15,7 +15,7 @@
 ### Day 1 – Monday, July 7th, 2025
 - **13:00–14:00** Introduction to FIJI • [📊 Slides](slides/Day1/01_Introduction_to_Image_Analysis.pptx)
 - **14:00–15:00** Showcase of FIJI plugins for bioimage analysis *with Ana Stojiljković*
-- **15:30–16:30** ilastik for interactive segmentation • [📁 Day 1 Materials](slides/Day1/)
+- **15:30–16:30** ilastik for interactive segmentation • [📁 Day 1 Materials](https://github.com/Daniel-Waiger/2025-GloBIAS-CNR-Naples-Fiji-for-Absolute-Beginners/tree/main/slides/Day1)
 
 ### Day 2 – Tuesday, July 8th, 2025
 - **09:30–10:30** Automatisation of bioimage analysis with ImageJ macro powered by large language models • [📊 Slides](slides/Day2/Enhancing_Image_Analysis_Communication_with_ChatGPT_with_Speaker_Notes.pptx)
