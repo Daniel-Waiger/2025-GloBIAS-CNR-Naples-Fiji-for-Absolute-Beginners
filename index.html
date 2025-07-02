@@ -461,76 +461,126 @@ code {
     </div>
 </section>
 
-<!-- ImageJ Macro Scripts -->
+<!-- ImageJ Macro Scripts & Code -->
 <section id="macros">
-    <h2>🧾 ImageJ Macro Scripts Overview</h2>
+    <h2>💬 ImageJ Macro Scripts & Code</h2>
     
-    <table class="macro-table">
-        <thead>
-            <tr>
-                <th>Macro File</th>
-                <th>What It Does</th>
-                <th>Teaches</th>
-                <th>Link</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><code>01_image_info_conversion.ijm</code></td>
-                <td>Loads M51, shows metadata, converts to 8-bit with/without scaling</td>
-                <td>Bit-depth, profiles, scaling</td>
-                <td><a href="macros/01_image_info_conversion.ijm">📄 Script</a></td>
-            </tr>
-            <tr>
-                <td><code>02_histogram_profiles.ijm</code></td>
-                <td>Draws a line ROI, shows intensity profiles pre/post scaling</td>
-                <td>Line ROI, Plot Profile, scaling effects</td>
-                <td><a href="macros/02_histogram_profiles.ijm">📄 Script</a></td>
-            </tr>
-            <tr>
-                <td><code>03_brightness_contrast.ijm</code></td>
-                <td>Loads gel_inv, adjusts contrast, applies LUT</td>
-                <td>Display vs destructive changes</td>
-                <td><a href="macros/03_brightness_contrast.ijm">📄 Script</a></td>
-            </tr>
-            <tr>
-                <td><code>04_channels_LUTs.ijm</code></td>
-                <td>Opens RGB image, splits/merges channels, applies LUTs</td>
-                <td>Multichannel handling, color tools</td>
-                <td><a href="macros/04_channels_LUTs.ijm">📄 Script</a></td>
-            </tr>
-            <tr>
-                <td><code>05_roi_measurement.ijm</code></td>
-                <td>Opens blobs, draws ROIs, measures area/perimeter</td>
-                <td>ROI tools, Point tool, measurements</td>
-                <td><a href="macros/05_roi_measurement.ijm">📄 Script</a></td>
-            </tr>
-            <tr>
-                <td><code>06_set_scale_bar.ijm</code></td>
-                <td>Sets spatial scale using a known bar, adds and flattens scale bar</td>
-                <td>Calibration + overlays</td>
-                <td><a href="macros/06_set_scale_bar.ijm">📄 Script</a></td>
-            </tr>
-            <tr>
-                <td><code>07_segmentation_particles.ijm</code></td>
-                <td>Segments objects using threshold/watershed, analyzes particles</td>
-                <td>Segmentation, object counting</td>
-                <td><a href="macros/07_segmentation_particles.ijm">📄 Script</a></td>
-            </tr>
-            <tr>
-                <td><code>08_masking_regions.ijm</code></td>
-                <td>Creates and applies a binary mask to restrict analysis</td>
-                <td>Masking via image calculator</td>
-                <td><a href="macros/08_masking_regions.ijm">📄 Script</a></td>
-            </tr>
-            <tr>
-                <td><code>09_ctcf_fluorescence.ijm</code></td>
-                <td>Measures fluorescence, calculates corrected total cell fluorescence (CTCF)</td>
-                <td>Integrated density, background correction</td>
-                <td><a href="macros/09_ctcf_fluorescence.ijm">📄 Script</a></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="materials-grid">
+        <div class="material-card">
+            <h3><a href="macros/01_image_info_conversion.ijm">📄 01_image_info_conversion.ijm</a></h3>
+            <p><strong>What it does:</strong> Loads M51, shows metadata, converts to 8-bit with/without scaling</p>
+            <p><strong>Teaches:</strong> Bit-depth, profiles, scaling</p>
+            <pre><code>run("M51 Galaxy (177K)");
+run("Show Info...");
+run("Duplicate...", "title=M51_Copy");
+setOption("ScaleConversions", true);
+run("8-bit");
+saveAs("Tiff", "M51_scaled.tif");</code></pre>
+        </div>
+        
+        <div class="material-card">
+            <h3><a href="macros/02_histogram_profiles.ijm">📄 02_histogram_profiles.ijm</a></h3>
+            <p><strong>What it does:</strong> Draws a line ROI, shows intensity profiles pre/post scaling</p>
+            <p><strong>Teaches:</strong> Line ROI, Plot Profile, scaling effects</p>
+            <pre><code>run("M51 Galaxy (177K)");
+makeLine(90, 60, 160, 60);
+run("Plot Profile");
+setOption("ScaleConversions", true);
+run("8-bit");
+run("Plot Profile");</code></pre>
+        </div>
+        
+        <div class="material-card">
+            <h3><a href="macros/03_brightness_contrast.ijm">📄 03_brightness_contrast.ijm</a></h3>
+            <p><strong>What it does:</strong> Loads gel_inv, adjusts contrast, applies LUT</p>
+            <p><strong>Teaches:</strong> Display vs destructive changes</p>
+            <pre><code>run("Gel (105K)");
+run("Enhance Contrast", "saturated=0.35");
+setMinAndMax(80, 200);
+run("Apply LUT");
+saveAs("Tiff", "gel_adjusted.tif");</code></pre>
+        </div>
+        
+        <div class="material-card">
+            <h3><a href="macros/04_channels_LUTs.ijm">📄 04_channels_LUTs.ijm</a></h3>
+            <p><strong>What it does:</strong> Opens RGB image, splits/merges channels, applies LUTs</p>
+            <p><strong>Teaches:</strong> Multichannel handling, color tools</p>
+            <pre><code>run("Fluorescent Cells (400K)");
+run("Split Channels");
+run("Merge Channels...", "c1=red c2=green c3=blue create");
+run("Channels Tool...");
+run("Add Calibration Bar", "location=[Lower Right]");</code></pre>
+        </div>
+        
+        <div class="material-card">
+            <h3><a href="macros/05_roi_measurement.ijm">📄 05_roi_measurement.ijm</a></h3>
+            <p><strong>What it does:</strong> Opens blobs, draws ROIs, measures area/perimeter</p>
+            <p><strong>Teaches:</strong> ROI tools, Point tool, measurements</p>
+            <pre><code>run("Blobs (25K)");
+makeRectangle(30, 40, 40, 40);
+roiManager("Add");
+makeOval(100, 100, 35, 35);
+roiManager("Add");
+run("Set Measurements...", "area mean perimeter redirect=None decimal=3");
+roiManager("Measure");
+saveAs("Results", "blobs_results.csv");</code></pre>
+        </div>
+        
+        <div class="material-card">
+            <h3><a href="macros/06_set_scale_bar.ijm">📄 06_set_scale_bar.ijm</a></h3>
+            <p><strong>What it does:</strong> Sets spatial scale using a known bar, adds and flattens scale bar</p>
+            <p><strong>Teaches:</strong> Calibration + overlays</p>
+            <pre><code>run("Cell Colony (31K)");
+makeLine(25, 230, 125, 230);
+run("Set Scale...", "distance=100 known=100 unit=um");
+run("Add Scale Bar", "width=100 height=12 font=18 color=White location=[Lower Right] bold overlay");
+run("Flatten");
+saveAs("Tiff", "Cell_Colony_scaled.tif");</code></pre>
+        </div>
+        
+        <div class="material-card">
+            <h3><a href="macros/07_segmentation_particles.ijm">📄 07_segmentation_particles.ijm</a></h3>
+            <p><strong>What it does:</strong> Segments objects using threshold/watershed, analyzes particles</p>
+            <p><strong>Teaches:</strong> Segmentation, object counting</p>
+            <pre><code>run("Fluorescent Cells (400K)");
+run("Split Channels");
+selectWindow("RGB_Cell (green)");
+run("8-bit");
+setAutoThreshold("Otsu");
+run("Convert to Mask");
+run("Watershed");
+run("Analyze Particles...", "size=50-Infinity circularity=0.20-1.00 display add");</code></pre>
+        </div>
+        
+        <div class="material-card">
+            <h3><a href="macros/08_masking_regions.ijm">📄 08_masking_regions.ijm</a></h3>
+            <p><strong>What it does:</strong> Creates and applies a binary mask to restrict analysis</p>
+            <p><strong>Teaches:</strong> Masking via image calculator</p>
+            <pre><code>run("Fluorescent Cells (400K)");
+run("Split Channels");
+selectWindow("RGB_Cell (green)");
+run("8-bit");
+setAutoThreshold("Otsu");
+run("Convert to Mask");
+run("Create Selection");
+run("Duplicate...", "title=Mask");
+imageCalculator("AND create", "RGB_Cell (green)", "Mask");
+selectWindow("Result of RGB_Cell (green)");
+run("Analyze Particles...", "size=50-Infinity display add");</code></pre>
+        </div>
+        
+        <div class="material-card">
+            <h3><a href="macros/09_ctcf_fluorescence.ijm">📄 09_ctcf_fluorescence.ijm</a></h3>
+            <p><strong>What it does:</strong> Measures fluorescence, calculates corrected total cell fluorescence (CTCF)</p>
+            <p><strong>Teaches:</strong> Integrated density, background correction</p>
+            <pre><code>run("Blobs (25K)");
+makeOval(100, 100, 40, 40);
+run("Set Measurements...", "area mean min integrated redirect=None decimal=3");
+run("Measure");
+makeRectangle(10, 10, 30, 30);
+run("Measure");</code></pre>
+        </div>
+    </div>
 </section>
 
 <!-- Setup Instructions -->
@@ -655,45 +705,6 @@ code {
             <strong>CTCF = Integrated Density – (Area × Mean Background)</strong></p>
         </div>
     </div>
-</section>
-
-<!-- Macro Code Examples -->
-<section id="code">
-    <h2>💬 Macro Code Blocks</h2>
-    
-    <h3>01_image_info_conversion.ijm</h3>
-    <pre><code>run("M51 Galaxy (177K)");
-run("Show Info...");
-run("Duplicate...", "title=M51_Copy");
-setOption("ScaleConversions", true);
-run("8-bit");
-saveAs("Tiff", "M51_scaled.tif");</code></pre>
-
-    <h3>02_histogram_profiles.ijm</h3>
-    <pre><code>run("M51 Galaxy (177K)");
-makeLine(90, 60, 160, 60);
-run("Plot Profile");
-setOption("ScaleConversions", true);
-run("8-bit");
-run("Plot Profile");</code></pre>
-
-    <h3>05_roi_measurement.ijm</h3>
-    <pre><code>run("Blobs (25K)");
-makeRectangle(30, 40, 40, 40);
-roiManager("Add");
-makeOval(100, 100, 35, 35);
-roiManager("Add");
-run("Set Measurements...", "area mean perimeter redirect=None decimal=3");
-roiManager("Measure");
-saveAs("Results", "blobs_results.csv");</code></pre>
-
-    <h3>09_ctcf_fluorescence.ijm</h3>
-    <pre><code>run("Blobs (25K)");
-makeOval(100, 100, 40, 40);
-run("Set Measurements...", "area mean min integrated redirect=None decimal=3");
-run("Measure");
-makeRectangle(10, 10, 30, 30);
-run("Measure");</code></pre>
 </section>
 
 <!-- GitHub Button -->
