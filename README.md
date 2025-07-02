@@ -1,4 +1,4 @@
-# 🧬 Fiji for Beginners - Fluorescence Image Analysis Course – GloBIAS & CNR Naples 2025
+# 🧬 Fiji, Ilastik, and Automation for Beginners - Fluorescence Image Analysis Course – GloBIAS & CNR Naples 2025
 
 <p align="center">
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-CC--BY--SA%204.0-brightgreen"></a>
