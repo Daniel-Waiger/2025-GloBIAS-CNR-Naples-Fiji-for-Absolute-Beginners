@@ -1,11 +1,30 @@
-run("Blobs (25K)");
+open("../images/blobs.tif");
+print("Opening blobs image...");
+wait(1500);
 
 // Create duplicate for working on copy
 run("Duplicate...", "title=Blobs_Copy");
+print("Creating duplicate for working on copy...");
+wait(1500);
 makeRectangle(30, 40, 40, 40);
+print("Creating rectangular ROI...");
+wait(1500);
 roiManager("Add");
+print("Adding rectangle to ROI manager...");
+wait(1500);
 makeOval(100, 100, 35, 35);
+print("Creating oval ROI...");
+wait(1500);
 roiManager("Add");
+print("Adding oval to ROI manager...");
+wait(1500);
 run("Set Measurements...", "area mean perimeter redirect=None decimal=3");
+print("Setting measurements to area, mean, and perimeter...");
+wait(1500);
 roiManager("Measure");
+print("Measuring all ROIs...");
+wait(1500);
 saveAs("Results", "blobs_results.csv");
+print("Saving results to CSV file...");
+wait(1500);
+run("Tile");

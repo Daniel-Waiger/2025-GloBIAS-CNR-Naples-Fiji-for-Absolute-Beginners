@@ -3,11 +3,12 @@
 */
 close("*");
 run("Leaf");
-
+wait(1000);
 /*
 # Step 2: Setting Scale and Measurements
 */
 makeLine(83, 55, 142, 55);
+wait(2000);
 run("Set Scale...", "distance=59 known=10 unit=mm");
 run("Set Measurements...", "area display redirect=None decimal=3");
 
