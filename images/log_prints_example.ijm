@@ -1,4 +1,8 @@
-print("Select Image...");
+print("\\Clear");
+print("Clean Previuos log prints");
+print("Closing old images...");
+close("*");
+run("Open...");
 wait(1500);
 print("Image Loaded...");
 wait(1500);
