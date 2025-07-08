@@ -1,5 +1,7 @@
-print("\\Clear");
 print("Clean Previuos log prints");
+print("\\Clear");
+print("Ciao Amici - Fluorescence Image Analysis Course – GloBIAS & CNR Naples 2025");
+waitForUser("Click To Continue", "Let's Go!");
 print("Closing old images...");
 close("*");
 run("Open...");
@@ -20,6 +22,6 @@ print("60 Blobs Found...");
 wait(1500);
 print("Measure ROIs on Raw Image: Blobs.tif...");
 wait(1500);
-print("ROIs and Results Saved: C:/Documents/Amazing Blobs...");
+print("ROIs and Results Saved (In Path): C:/Documents/Amazing Blobs...");
 wait(1500);
 showMessage("Blob Analysis", "Analysis Complete");
