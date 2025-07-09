@@ -1,0 +1,27 @@
+Processing table: Track Visualization
+Total rows in table: 818
+Data starts at row: 3
+Valid data points: 815
+Number of unique tracks: 12
+Track 0: 115 points, distance: 642.4038
+Track 1: 115 points, distance: 316.5587
+Track 2: 115 points, distance: 343.1957
+Track 3: 115 points, distance: 638.456
+Track 4: 115 points, distance: 809.6053
+Track 5: 115 points, distance: 375.6823
+Track 6: 5 points, distance: 28.4918
+Track 7: 26 points, distance: 110.2226
+Track 8: 77 points, distance: 352.6545
+Track 9: 2 points, distance: 2.4103
+Track 10: 12 points, distance: 37.3035
+Track 11: 3 points, distance: 3.2098
+
+=== TRACK ANALYSIS SUMMARY ===
+Total tracks found: 12
+Total data points: 815
+X range: 17.421 to 658.6787
+Y range: 30.6952 to 511.5482
+Track IDs: NaN
+Average points per track: 67.9167
+
+Track visualization complete!
