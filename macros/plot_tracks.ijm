@@ -18,7 +18,7 @@ if (csvPath == "") {
 open(csvPath);
 
 // Get the table name (filename without extension)
-tableName = getTitle();
+tableName = File.getName(csvPath);
 print("Processing table: " + tableName);
 
 // Get number of rows in the table
@@ -200,6 +200,78 @@ for (trackIndex = 0; trackIndex < uniqueTrackIDs.length; trackIndex++) {
 }
 
 // Show the plot
+Plot.show();
+
+// Create second plot with absolute positions
+Plot.create("Track Visualization (Absolute Positions)", "X Position (pixels)", "Y Position (pixels)");
+Plot.setLimits(plotMinX, plotMaxX, plotMinY, plotMaxY);
+
+// Plot each track again without normalization
+for (trackIndex = 0; trackIndex < uniqueTrackIDs.length; trackIndex++) {
+    currentTrackID = uniqueTrackIDs[trackIndex];
+    
+    // Find all points for this track
+    trackXPos = newArray(0);
+    trackYPos = newArray(0);
+    trackFrames = newArray(0);
+    
+    for (i = 0; i < allTrackIDs.length; i++) {
+        if (allTrackIDs[i] == currentTrackID) {
+            trackXPos = Array.concat(trackXPos, allXPos[i]);
+            trackYPos = Array.concat(trackYPos, allYPos[i]);
+            trackFrames = Array.concat(trackFrames, allFrames[i]);
+        }
+    }
+    
+    // Sort points by frame
+    // Create indices array for sorting
+    indices = newArray(trackFrames.length);
+    for (i = 0; i < indices.length; i++) {
+        indices[i] = i;
+    }
+    
+    // Simple bubble sort by frame
+    for (i = 0; i < trackFrames.length - 1; i++) {
+        for (j = 0; j < trackFrames.length - i - 1; j++) {
+            if (trackFrames[j] > trackFrames[j + 1]) {
+                // Swap frames
+                temp = trackFrames[j];
+                trackFrames[j] = trackFrames[j + 1];
+                trackFrames[j + 1] = temp;
+                
+                // Swap corresponding X positions
+                temp = trackXPos[j];
+                trackXPos[j] = trackXPos[j + 1];
+                trackXPos[j + 1] = temp;
+                
+                // Swap corresponding Y positions
+                temp = trackYPos[j];
+                trackYPos[j] = trackYPos[j + 1];
+                trackYPos[j + 1] = temp;
+            }
+        }
+    }
+    
+    // Skip normalization - keep absolute positions
+    
+    // Set color for this track (same colors as first plot)
+    colorIndex = trackIndex % colors.length;
+    Plot.setColor(colors[colorIndex]);
+    
+    // Plot the track as connected lines
+    if (trackXPos.length > 1) {
+        Plot.add("connected circles", trackXPos, trackYPos);
+    } else if (trackXPos.length == 1) {
+        Plot.add("circles", trackXPos, trackYPos);
+    }
+    
+    // Add track label at the first point
+    if (trackXPos.length > 0) {
+        Plot.addText("Track " + currentTrackID, trackXPos[0], trackYPos[0]);
+    }
+}
+
+// Show the second plot
 Plot.show();
 
 // Print summary statistics
