@@ -113,7 +113,7 @@ Plot.create("Track Visualization", "X Position (pixels)", "Y Position (pixels)")
 Plot.setLimits(plotMinX, plotMaxX, plotMinY, plotMaxY);
 
 // Define colors for cycling
-colors = newArray("red", "blue", "green", "magenta", "cyan", "orange", "yellow", "pink");
+colors = newArray("red", "blue", "green", "magenta", "cyan", "orange", "yellow", "pink", "black", "gray", "darkGray", "lightGray");
 
 // Plot each track
 for (trackIndex = 0; trackIndex < uniqueTrackIDs.length; trackIndex++) {
@@ -161,6 +161,16 @@ for (trackIndex = 0; trackIndex < uniqueTrackIDs.length; trackIndex++) {
         }
     }
     
+    // Normalize track to start at (0,0)
+    if (trackXPos.length > 0) {
+        startX = trackXPos[0];
+        startY = trackYPos[0];
+        for (k = 0; k < trackXPos.length; k++) {
+            trackXPos[k] = trackXPos[k] - startX;
+            trackYPos[k] = trackYPos[k] - startY;
+        }
+    }
+    
     // Set color for this track
     colorIndex = trackIndex % colors.length;
     Plot.setColor(colors[colorIndex]);
@@ -177,7 +187,16 @@ for (trackIndex = 0; trackIndex < uniqueTrackIDs.length; trackIndex++) {
         Plot.addText("Track " + currentTrackID, trackXPos[0], trackYPos[0]);
     }
     
-    print("Track " + currentTrackID + ": " + trackXPos.length + " points");
+    // Calculate total distance for this track
+    totalDistance = 0;
+    for (k = 1; k < trackXPos.length; k++) {
+        dx = trackXPos[k] - trackXPos[k-1];
+        dy = trackYPos[k] - trackYPos[k-1];
+        distance = sqrt(dx*dx + dy*dy); // Euclidean distance formula (Pythagorean theorem)
+        totalDistance += distance;
+    }
+    
+    print("Track " + currentTrackID + ": " + trackXPos.length + " points, distance: " + totalDistance);
 }
 
 // Show the plot
