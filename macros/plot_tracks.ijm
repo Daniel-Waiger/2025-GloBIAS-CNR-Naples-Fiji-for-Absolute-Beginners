@@ -8,11 +8,22 @@ if (isOpen("Log")) {
     run("Close");
 }
 
+// Close any open tables to prevent caching issues
+list = getList("window.titles");
+for (i = 0; i < list.length; i++) {
+    if (endsWith(list[i], ".csv") || indexOf(list[i], "Table") >= 0) {
+        selectWindow(list[i]);
+        run("Close");
+    }
+}
+
 // Open file dialog to select CSV file
 csvPath = File.openDialog("Select CSV file with tracking data");
 if (csvPath == "") {
     exit("No file selected");
 }
+
+print("Loading file: " + csvPath);
 
 // Open the CSV file with specific options to handle the header
 run("Table... ", "open=[" + csvPath + "] first=1 last=-1 step=1");
@@ -21,9 +32,26 @@ run("Table... ", "open=[" + csvPath + "] first=1 last=-1 step=1");
 tableName = File.getName(csvPath);
 print("Processing table: " + tableName);
 
+// Debug: Print all column headings to see what ImageJ actually imported
+headings = Table.headings;
+print("Column headings found: " + headings);
+
 // Get number of rows in the table
 nRows = Table.size;
 print("Total rows in table: " + nRows);
+
+// Debug: Print first few rows of data to see what's actually in the table
+print("=== FIRST 5 ROWS OF DATA ===");
+for (row = 0; row < minOf(5, nRows); row++) {
+    rowData = "";
+    headingArray = split(headings, "\t");
+    for (col = 0; col < headingArray.length; col++) {
+        if (col > 0) rowData += " | ";
+        value = Table.get(headingArray[col], row);
+        rowData += headingArray[col] + "=" + value;
+    }
+    print("Row " + row + ": " + rowData);
+}
 
 // Find the first data row (skip headers) - start from row 0 and look for valid data
 dataStartRow = 0;
