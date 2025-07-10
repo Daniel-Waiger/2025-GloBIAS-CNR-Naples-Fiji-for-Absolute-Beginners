@@ -14,8 +14,8 @@ if (csvPath == "") {
     exit("No file selected");
 }
 
-// Open the CSV file
-open(csvPath);
+// Open the CSV file with specific options to handle the header
+run("Table... ", "open=[" + csvPath + "] first=1 last=-1 step=1");
 
 // Get the table name (filename without extension)
 tableName = File.getName(csvPath);
@@ -25,12 +25,14 @@ print("Processing table: " + tableName);
 nRows = Table.size;
 print("Total rows in table: " + nRows);
 
-// Find the first data row (skip headers)
+// Find the first data row (skip headers) - start from row 0 and look for valid data
 dataStartRow = 0;
 for (i = 0; i < nRows; i++) {
     trackID = Table.get("TRACK_ID", i);
-    if (!isNaN(trackID)) {
+    print("Row " + i + " TRACK_ID: " + trackID + " (isNaN: " + isNaN(trackID) + ")");
+    if (!isNaN(trackID) && trackID != 0) { // Also check that it's not 0 (which might be a header conversion)
         dataStartRow = i;
+        print("Found first valid data at row: " + dataStartRow);
         break;
     }
 }
